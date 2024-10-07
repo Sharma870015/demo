@@ -1,0 +1,156 @@
+/* Container for video or image */
+.hero-container {
+  position: relative;
+  width: 100%;
+  max-width: 1900px; /* Keeps max width for large screens */
+  height: 800px; /* Set desired height */
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.video, .image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image or video fits nicely */
+  filter: blur(2px); /* Optional blur effect */
+}
+
+
+/* Text Content Centering */
+.text-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Perfectly center both horizontally and vertically */
+  color: white;
+  text-align: center;
+  z-index: 2; /* Ensure the text stays above the video/image */
+  width: 90%; /* For responsive behavior */
+  max-width: 1200px; /* To restrict maximum width */
+}
+
+.text-content h2 {
+  margin: 0;
+  font-size: 3rem; /* Adjust size */
+}
+
+.text-content p {
+  margin-top: 10px;
+  font-size: 1.4rem;
+}
+
+/* Header Styling */
+.hero-header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Darker semi-transparent background */
+  color: white;
+  z-index: 3; /* Make sure the header is above other elements */
+  padding: 15px 30px;
+}
+
+.hero-header nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-header nav ul li {
+  margin: 0 15px;
+}
+
+.hero-header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.hero-header nav ul li a:hover {
+  color: #ddd;
+}
+
+/* Arrows for navigation */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6); /* Darker background */
+  color: white;
+  padding: 20px;
+  cursor: pointer;
+  z-index: 2;
+  display: none; /* Hidden by default */
+  transition: background 0.3s ease; /* Smooth transition */
+}
+
+.arrow:hover {
+  background: rgba(0, 0, 0, 0.8); /* Slightly darker on hover */
+}
+
+.left-arrow {
+  left: 20px;
+}
+
+.right-arrow {
+  right: 20px;
+}
+
+/* Show arrows when hovered */
+.arrow.visible {
+  display: block;
+}
+
+/* Responsive styling for tablets */
+@media (max-width: 1024px) {
+  .text-content h2 {
+    font-size: 2.5rem;
+  }
+  .text-content p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Styling for smaller screens */
+@media (max-width: 768px) {
+  .text-content h2 {
+    font-size: 2.2rem;
+  }
+  .text-content p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile-specific styles */
+@media (max-width: 480px) {
+  .hero-container {
+    height: 220px; /* Reduced for mobile */
+  }
+
+  .text-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .text-content p {
+    font-size: 0.8rem;
+  }
+
+/* Always show arrows on mobile */
+.arrow {
+  display: block !important;
+  padding: 5px;
+}
+
+.hero-header nav ul {
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+.hero-header nav ul li {
+  margin: 10px 0;
+}
+}

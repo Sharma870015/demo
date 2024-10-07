@@ -1,0 +1,128 @@
+.section {
+  padding: 20px;
+  margin: 20px;
+}
+
+/* First Heading and Description */
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.head_ing {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #004080;
+}
+
+.desc_ {
+  font-size: 1.2rem;
+  max-width: 1080px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Second Heading and Description with border */
+.bordered-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+/* Service Cards */
+.cards_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three cards per row */
+  gap: 20px;
+  padding: 20px;
+}
+
+.arrow_button {
+  background: none; /* No background */
+  border: none; /* No border */
+  color: #004080; /* Dark blue color */
+  font-size: 1.5rem; /* Font size for the arrow */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  margin-top: 10px; /* Space between text and button */
+  transition: color 0.3s; /* Smooth color change */
+}
+
+.arrow_button:hover {
+  color: #66b2ff; /* Change color on hover */
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background 0.6s ease-in-out; /* Added transition for background */
+  min-height: 200px; /* Set the minimum height for the cards */
+  background: linear-gradient(to bottom, #ffffff, #e0e0e0); /* Default gradient */
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  color: white;
+  background: linear-gradient(to bottom, #66b2ff, #004080); /* Gradient blue color change on hover */
+}
+
+.card_title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #004080;
+}
+
+.card_desc {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .head_ing {
+    font-size: 1.8rem;
+  }
+
+  .desc_ {
+    font-size: 1.1rem;
+    max-width: 90%;
+  }
+
+  .cards_container {
+    grid-template-columns: repeat(2, 1fr); /* Two cards per row on tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .head_ing {
+    font-size: 1.6rem;
+  }
+
+  .desc_ {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .cards_container {
+    grid-template-columns: 1fr; /* Single column layout on mobile */
+  }
+
+  .card {
+    font-size: 1rem;
+    padding: 15px;
+    min-height: 180px; /* Adjust height for mobile */
+  }
+}

@@ -1,0 +1,99 @@
+.statistics-container {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space out the illustration and statistics */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    flex-wrap: wrap; /* Allow items to wrap */
+  }
+  
+  .illustration {
+    flex: 1; /* Make the illustration take up one part of the flex */
+    display: flex; /* Center the illustration */
+    justify-content: center; /* Center horizontally */
+    min-width: 200px; /* Minimum width for the illustration */
+  }
+  
+  .illustration img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .statistics-box {
+    flex: 2; /* Make the statistics box take up two parts of the flex */
+    padding: 20px;
+    text-align: center; /* Align text to the left */
+    min-width: 300px; /* Minimum width for the statistics box */
+  }
+  
+  h2 {
+    margin-bottom: 40px; /* Space below the heading */
+  }
+  
+  .statistics {
+    display: grid; /* Use grid for statistics layout */
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Space between grid items */
+  }
+  
+  .stat {
+    background-color: #fff; /* White background for each stat box */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    text-align: center; /* Center text */
+    transition: background 0.3s; /* Transition for hover effect */
+  }
+  .stat h3 {
+    margin: 10px 0; /* Margin for the heading */
+  }
+  
+  .stat p {
+    margin: 0; /* Remove default margin for paragraph */
+  }
+  .Achieve {
+    color: #004080;
+  }
+  
+  
+  .stat:hover {
+    background: linear-gradient(to bottom, #66b2ff, #004080); /* Change background on hover */
+    color: white; /* Change text color on hover */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .statistics-container {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items horizontally */
+    }
+  
+    .illustration {
+      margin-bottom: 20px; /* Space below the illustration */
+    }
+  
+    .statistics-box {
+      flex: 1; /* Allow box to take full width */
+    }
+  
+    .statistics {
+      grid-template-columns: 1fr; /* Single column layout */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .statistics-container {
+      padding: 10px; /* Reduce padding on smaller screens */
+    }
+  
+    .statistics {
+      gap: 15px; /* Reduce gap between statistics */
+    }
+  
+    .stat {
+      padding: 15px; /* Reduce padding inside stat boxes */
+    }
+  }
+  
