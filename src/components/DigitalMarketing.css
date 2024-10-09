@@ -1,0 +1,286 @@
+.digital-marketing-section {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+  }
+  
+  .digital-marketing-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #004080;
+  }
+  
+  .digital-marketing-intro {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #555;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for larger screens */
+    gap: 20px;
+  }
+  
+  .service-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    height: 15rem;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .service-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #004080;
+  }
+  
+  .service-description {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .services-container {
+      grid-template-columns: 1fr; /* 1 column for tablets and smaller screens */
+    }
+  }
+  
+
+  .digital-marketing-description {
+    font-size: 1rem;
+    color: #555;
+    margin: 20px auto;
+    max-width: 800px;
+    line-height: 1.6;
+  }
+  .full-width-image {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensures no extra space below the image */
+    filter: blur(2px);
+}
+
+.image-container {
+    position: relative;
+  }
+  
+  .full-width-image {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    filter: blur(3px);
+  }
+  
+  .image-overlay {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+    /* background: rgba(0, 0, 0, 0.5); Optional: semi-transparent background */
+    padding: 20px; /* Some padding around text */
+    border-radius: 10px; /* Optional: rounded corners */
+  }
+  
+  .overlay-title {
+    font-size: 3rem; /* Adjust title size */
+    margin-bottom: 10px; /* Space between title and description */
+  }
+  
+  .overlay-description {
+    font-size: 1.5rem; /* Adjust description size */
+  }
+  
+.digital-marketing-section {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+    background: linear-gradient(to bottom, #f0f9ff, #d9e6f2);
+    border-radius: 10px;
+  }
+  
+  .digital-marketing-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #004080;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .digital-marketing-intro {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #555;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Statistics Section */
+  .statistics-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px;
+  }
+  
+  .statistic-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    margin: 0 10px; /* Margin between cards */
+  }
+  
+  .statistic-icon {
+    font-size: 3rem;
+    color: #004080;
+    margin-bottom: 10px;
+  }
+  
+  .statistic-title {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #004080;
+    font-weight: bold;
+  }
+  
+  .statistic-description {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Testimonials Section */
+  .testimonials-section {
+    margin-bottom: 40px;
+  }
+  
+  .testimonials-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #004080;
+  }
+  
+  .testimonial {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 600px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonial-text {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .testimonial-author {
+    font-size: 0.9rem;
+    color: #004080;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* Call-to-Action Section */
+  .cta-section {
+    background-color: #004080;
+    color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+  }
+  
+  .cta-title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .cta-description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .cta-button {
+    background-color: #ffffff;
+    color: #004080;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 15rem;
+  }
+  
+  .cta-button:hover {
+    background-color: #e8e4e4;
+    color: #333;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .statistics-container {
+      flex-direction: column; /* Stack statistics vertically on smaller screens */
+      align-items: center;
+    }
+  
+    .statistic-card {
+      margin-bottom: 20px; /* Add margin between stacked cards */
+    }
+    .overlay-description{
+        font-size: 0.6rem;
+    }
+    .overlay-title{
+        font-size: 1.3rem;
+    }
+  }
+  @media (max-width: 480px) {
+    .statistics-container {
+      flex-direction: column;
+    }
+  
+    .statistic-card {
+      margin: 10px 0;
+    }
+  
+    .cta-title {
+      font-size: 1.5rem;
+    }
+  
+    .cta-description {
+      font-size: 0.9rem;
+    }
+  
+    .cta-button {
+      width: 100%;
+    }
+  
+    .overlay-description {
+      font-size: 0.7rem;
+    }
+  
+    .overlay-title {
+      font-size: 1.2rem;
+    }
+    .digital-marketing-title{
+      font-size: 2rem;
+    }
+  }
+  

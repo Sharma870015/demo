@@ -1,0 +1,92 @@
+.mobile-development-section {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+  }
+  
+  .mobile-dev-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #004080;
+  }
+  
+  .mobile-dev-intro {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #555;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .services-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for larger screens */
+    gap: 20px;
+  }
+  
+  .service-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .service-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #004080;
+  }
+  
+  .service-description {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Centering the Get Started button */
+  .cta-container {
+    margin-top: 40px;
+    display: flex; /* Flexbox to center the button */
+    justify-content: center; /* Horizontally center the button */
+  }
+  
+  .cta-title {
+    font-size: 2rem;
+    color: #004080;
+  }
+  
+  .cta-description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .cta-button {
+    background-color: #fff;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 10rem;
+  }
+  
+  .cta-button:hover {
+    background-color: #858585;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .services-container {
+      grid-template-columns: 1fr; /* 1 column for tablets and smaller screens */
+    }
+  }
+  

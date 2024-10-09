@@ -1,0 +1,197 @@
+/* Hero Section with Image and Text Overlay */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 50vw;
+  max-height: 800px;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(2px);
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero-description {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+/* Services Section */
+.services-section {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #004080;
+  margin-top: 25px;
+}
+.owl-nav {
+  font-size: 4rem;
+  color: #004080;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four columns for larger screens */
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #004080;
+}
+
+.service-description {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* CTA Section */
+.cta-section {
+  padding: 40px;
+  background-color: #004080;
+  color: white;
+  text-align: center;
+}
+
+.cta-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.cta-description {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: white;
+  color: #004080;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+/* Owl Carousel Styling */
+.owl-theme .owl-nav {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.owl-theme .owl-nav [class*='owl-'] {
+  background: #004080;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+  background: #0056b3;
+}
+
+.owl-theme .owl-dots .owl-dot {
+  background: #004080;
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+.first-title {
+  font-size: 2.5rem;
+  color: #004080;
+}
+
+.owl-theme .owl-dot.active {
+  background: #0056b3;
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+  .services-container {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
+  }
+
+  .testimonials-container {
+    grid-template-columns: 1fr; /* Single column for testimonials on tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .services-container {
+    grid-template-columns: 1fr; /* Single column for mobile devices */
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .section-title{
+    font-size: 2rem;
+    margin-top: 15px;
+  }
+  .hero-title{
+    font-size: 1.7rem;
+    max-width: 100%;
+    width: 235px;
+  }
+  .hero-description{
+    font-size: 0.8rem;
+    max-width: 100%;
+  }
+}

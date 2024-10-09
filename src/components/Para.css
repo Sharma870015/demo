@@ -41,7 +41,7 @@
 /* Service Cards */
 .cards_container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Three cards per row */
+  grid-template-columns: repeat(2, 1fr); /* Three cards per row */
   gap: 20px;
   padding: 20px;
 }
@@ -59,6 +59,41 @@
 .arrow_button:hover {
   color: #66b2ff; /* Change color on hover */
 }
+
+.arrow_button {
+  display: inline-flex; /* Aligns items inline with flex */
+  align-items: center; /* Vertically centers the content */
+  padding: 10px 15px; /* Padding for the button */
+  border: none; /* Removes default button border */
+  border-radius: 5px; /* Rounds the corners of the button */
+  background-color: #004080; /* Button background color */
+  color: white; /* Text color */
+  font-size: 16px; /* Font size for text */
+  cursor: pointer; /* Changes cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.arrow_button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.arrow_button svg {
+  margin-left: 8px; /* Space between text and icon */
+  font-size: 18px; /* Adjust the icon size */
+  color: white; /* Icon color */
+}
+
+/* Optional: Add more styles for different screen sizes if needed */
+@media (max-width: 600px) {
+  .arrow_button {
+    font-size: 14px; /* Smaller font size on small screens */
+  }
+
+  .arrow_button svg {
+    font-size: 16px; /* Adjust icon size on small screens */
+  }
+}
+
 
 .card {
   background-color: #fff;
@@ -108,12 +143,15 @@
 
 @media (max-width: 480px) {
   .head_ing {
-    font-size: 1.6rem;
+    font-size: 25px;
+    max-width: 100%; /* Make it wider */
+    margin-bottom: 15px;
   }
 
   .desc_ {
-    font-size: 1rem;
-    max-width: 100%;
+    font-size: 14px;
+    max-width: 100%; /* Increase width to take up more space */
+    line-height: 1.4; /* Reduce line-height to fit more content in fewer lines */
   }
 
   .cards_container {
@@ -123,6 +161,8 @@
   .card {
     font-size: 1rem;
     padding: 15px;
-    min-height: 180px; /* Adjust height for mobile */
+    min-height: 200px; /* Adjust height for mobile */
+    max-width: 100%;
+    width: 275px;
   }
 }

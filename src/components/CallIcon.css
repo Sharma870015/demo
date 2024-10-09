@@ -1,0 +1,66 @@
+/* src/components/CallIcon.css */
+.call-icon {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: #004080; /* Base color */
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Soft shadow */
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth scaling and shadow */
+    z-index: 1000; /* Ensure it's on top */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Glow effect */
+  .call-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    box-shadow: 0 8px 30px rgba(0, 123, 255, 0.7); /* Enhanced glow on hover */
+    animation: glow 1.5s infinite alternate; /* Add glow animation */
+  }
+  
+  /* Animation for glowing effect */
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 5px #007bff, 0 0 10px #007bff, 0 0 15px #00c6ff, 0 0 20px #00c6ff;
+    }
+    to {
+      box-shadow: 0 0 10px #007bff, 0 0 20px #007bff, 0 0 30px #00c6ff, 0 0 40px #00c6ff;
+    }
+  }
+  
+  .call-icon img {
+    width: 60px; /* Larger size for better visibility */
+    height: 60px;
+    transition: opacity 0.3s ease; /* Smooth opacity change */
+    text-align: center;
+    color: #fff;
+  }
+
+  
+  
+  /* Responsive adjustments for larger screens */
+  @media (max-width: 768px) {
+    .call-icon img {
+      width: 50px; /* Adjust for medium devices */
+      height: 50px;
+    }
+  }
+  
+  /* Responsive adjustments for small screens */
+  @media (max-width: 480px) {
+    .call-icon {
+      padding: 10px; /* Reduce padding on smaller screens */
+      right: 15px; /* Adjust positioning */
+      bottom: 15px; /* Adjust positioning */
+    }
+  
+    .call-icon img {
+      width: 40px; /* Smaller icon for mobile */
+      height: 40px;
+    }
+  }
+  

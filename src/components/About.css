@@ -1,83 +1,240 @@
-/* About Us Section Styling
-.about-section {
-    padding: 80px 20px;
-    background-color: #f9f9f9;
-    text-align: center;
+/* Container Styling */
+.about-container {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* Header Section */
+.about-header {
+  width: 100%;
+  height: 800px;
+  position: relative;
+}
+
+.about-header-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(2px);
+}
+
+/* Overlay Text */
+.about-header-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.about-header-title {
+  font-size: 3rem;
+  color: #fff;
+}
+
+/* About Us, Services, Platforms, Contact Section */
+.about-us, .services-section, .platforms-section, .contact-section {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.about-us h2, .services-section h2, .platforms-section h2, .contact-section h2 {
+  font-size: 2.5rem;
+  color: #004080;
+}
+
+.about-us p, .services-section p, .platforms-section p, .contact-section p {
+  font-size: 1.2rem;
+  margin: 20px auto;
+  max-width: 800px;
+  color: #555;
+}
+.About_desc {
+  margin-top: 1rem;
+}
+
+/* Services Grid */
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card h3 {
+  font-size: 1.8rem;
+  color: #004080;
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Platforms Section */
+.platforms-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.platforms-section ul li {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.platforms-section ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.Single {
+  padding: 2rem;
+  border: none;
+  background: #004080;
+  color: white;
+  width: 22rem;
+}
+.Single:hover{
+  background-color: #0066cc;
+}
+.Where_You {
+  margin-bottom: 2rem;
+}
+
+.platforms-section ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 80%;
+  max-width: 600px;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #004080;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.Platforms {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.About_Servc {
+  margin-bottom: 2rem;
+}
+.contact-form button:hover {
+  background-color: #0066cc;
+}
+.contact-section {
+  padding: 2rem;
+}
+.services-section {
+  padding: 1rem;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Responsiveness for Max Width 768px */
+@media (max-width: 768px) {
+  .services-container {
+    grid-template-columns: 1fr;
   }
-  
-  .about-section h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
-    color: #333;
+
+  .about-us h2, .services-section h2, .platforms-section h2, .contact-section h2 {
+    font-size: 2rem;
   }
-  
-  .about-section p {
-    font-size: 18px;
-    line-height: 1.8;
-    margin: 0 auto 40px;
-    max-width: 800px;
-    color: #555;
+
+  .about-us p, .services-section p, .platforms-section p, .contact-section p {
+    font-size: 1rem;
   }
-  
-  .about-cards {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 40px;
-  }
-  
-  .about-card {
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
+
+  .contact-form input, .contact-form textarea {
     width: 100%;
-    transition: transform 0.3s ease;
   }
-  
-  .about-card:hover {
-    transform: translateY(-10px);
+
+  .about-header-title {
+    font-size: 2rem;
   }
-  
-  .about-card img {
+}
+
+/* Responsiveness for Max Width 480px */
+@media (max-width: 480px) {
+  .about-header {
+    height: 400px;
+  }
+
+  .about-header-title {
+    font-size: 1.6rem;
+  }
+
+  .services-container {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .about-us h2, .services-section h2, .platforms-section h2, .contact-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-us p, .services-section p, .platforms-section p, .contact-section p {
+    font-size: 0.9rem;
+  }
+
+  .contact-form input, .contact-form textarea {
+    width: 90%;
+  }
+
+  .contact-form button {
+    width: 90%;
+  }
+  .About_desc{
+    font-size: 0.8rem;
     max-width: 100%;
-    border-radius: 50%;
-    margin-bottom: 20px;
+    width: 234px;
   }
-  
-  .about-card h4 {
-    font-size: 24px;
-    margin-bottom: 15px;
-    color: #333;
+  .Single:hover{
+    background-color: #0066cc;
   }
-  
-  .about-card p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #666;
-  }
-  
-  
-  @media (max-width: 768px) {
-    .about-section h2 {
-      font-size: 28px;
-    }
-  
-    .about-section p {
-      font-size: 16px;
-      margin-bottom: 30px;
-    }
-  
-    .about-cards {
-      flex-direction: column;
-      gap: 30px;
-    }
-  
-    .about-card {
-      max-width: 90%;
-    }
-  }
-   */
+}

@@ -9,7 +9,7 @@
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 40px;
-  color: #333;
+  color: #004080;
 }
 
 /* Testimonial card styles */
@@ -21,7 +21,7 @@
   display: flex; /* Use flexbox for alignment */
   flex-direction: column; /* Stack content vertically */
   justify-content: space-between; /* Space between elements */
-  height: 100%; /* Make the card take full height */
+  height: 200px; /* Make the card take full height */
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
@@ -46,7 +46,7 @@
 .testimonial-card h4 {
   font-size: 18px;
   font-weight: bold;
-  color: #000;
+  color: #004080;
   margin: 0;
 }
 
@@ -83,6 +83,7 @@
 
   .testimonial-card h4 {
     font-size: 17px;
+    color: #004080;
   }
 }
 
@@ -101,6 +102,7 @@
 
   .testimonial-card h4 {
     font-size: 16px;
+    color:#004080 ;
   }
 
   .owl-carousel .owl-item {
@@ -123,6 +125,7 @@
 
   .testimonial-card h4 {
     font-size: 15px;
+    color: #004080;
   }
 
   .owl-carousel .owl-item {

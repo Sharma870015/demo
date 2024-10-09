@@ -3,13 +3,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserFriends, faProjectDiagram, faUsers, faClipboardCheck } from '@fortawesome/free-solid-svg-icons';
 import './StatisticsBox.css'; // Create a CSS file for styling
 import logo from './Static.png'
+import model from './Model-removebg-preview.png'
 
 const StatisticsBox = () => {
   return (
     <div className="statistics-container">
       <div className="illustration">
         {/* Replace the src with your illustration image URL */}
-        <img src={logo} alt="Illustration" />
+        <img src={model} alt="Illustration" />
       </div>
       <div className="statistics-box">
         <h1 className="Achieve">Our Achievements</h1>

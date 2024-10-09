@@ -1,4 +1,7 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom'; // Import Link
 import './Para.css';
 
 const Para = () => {
@@ -7,7 +10,7 @@ const Para = () => {
       {/* First Heading and Description */}
       <div className="box">
         <h2 className="head_ing">
-          Welcome to DigiAppify: Your Partner in Digital Solutions
+          Welcome to DigiAppify: Your Digital Partner
         </h2>
         <p className="desc_">
           At DigiAppify, we specialize in providing cutting-edge software
@@ -35,32 +38,30 @@ const Para = () => {
           <div className="card">
             <h3 className="card_title">Web Development</h3>
             <p className="card_desc">Building responsive, user-friendly websites tailored to your business needs.</p>
-            <button className="arrow_button">→</button>
+            <Link to="/web-development" className="arrow_button"> {/* Use Link to route */}
+              <FontAwesomeIcon icon={faAngleRight} />
+            </Link>
           </div>
           <div className="card">
             <h3 className="card_title">Mobile Development</h3>
             <p className="card_desc">Creating innovative mobile applications for Android and iOS platforms.</p>
-            <button className="arrow_button">→</button>
+            <Link to="/mobileApp-development" className="arrow_button"> {/* Use Link to route */}
+              <FontAwesomeIcon icon={faAngleRight} />
+            </Link>
           </div>
           <div className="card">
             <h3 className="card_title">Digital Marketing</h3>
             <p className="card_desc">Boosting your online presence with effective digital marketing strategies.</p>
-            <button className="arrow_button">→</button>
+            <Link to="/digital-marketing" className="arrow_button"> {/* Use Link to route */}
+              <FontAwesomeIcon icon={faAngleRight} />
+            </Link>
           </div>
           <div className="card">
             <h3 className="card_title">SEO Optimization</h3>
             <p className="card_desc">Improving your website’s visibility and rankings on search engines.</p>
-            <button className="arrow_button">→</button>
-          </div>
-          <div className="card">
-            <h3 className="card_title">UI/UX Design</h3>
-            <p className="card_desc">Crafting intuitive and engaging user experiences through design.</p>
-            <button className="arrow_button">→</button>
-          </div>
-          <div className="card">
-            <h3 className="card_title">Cloud Solutions</h3>
-            <p className="card_desc">Providing scalable secure cloud-based services for your business.</p>
-            <button className="arrow_button">→</button>
+            <button className="arrow_button">
+               <FontAwesomeIcon icon={faAngleRight} />
+            </button>
           </div>
         </div>
       </div>

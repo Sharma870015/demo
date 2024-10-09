@@ -1,0 +1,225 @@
+/* Overall Container */
+.contact-us-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* First Section: Image Background with Title */
+.ContactUsImg {
+    width: 100%;
+    height: 60vh; /* Adjust the height of the image */
+    background-image: url('./ContactUs.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center; /* Horizontally centers content */
+    align-items: center; /* Vertically centers content */
+}
+
+.contact-header {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    height: 100%; /* Ensure it takes up full height for proper centering */
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Semi-transparent background for better text visibility */
+}
+
+.contact-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #5ccc5c;
+}
+
+.contact-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: white;
+    margin: 10px auto;
+}
+
+.contact-subtitle {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+/* Second Section: Contact Information */
+.contact-info-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    transition: transform 0.3s; /* Add a hover effect */
+}
+
+.contact-info:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+.contact-icon {
+    font-size: 2.5rem; /* Increased icon size */
+    margin-bottom: 10px;
+    color: #007BFF;
+    transition: color 0.3s; /* Smooth transition for icon color */
+}
+
+.contact-info:hover .contact-icon {
+    color: #0056b3; /* Change icon color on hover */
+}
+
+.contact-details h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #333; /* Darker color for titles */
+}
+
+.contact-details p {
+    font-size: 1rem;
+    color: #555; /* Slightly lighter color for text */
+}
+
+/* Third Section: Contact Form */
+.contact-form-section {
+    background-color: #ffffff; /* White background for the form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Deeper shadow for depth */
+    padding: 40px;
+    text-align: center;
+    margin: 20px; /* Margin around the form section */
+}
+
+.contact-form-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #05549a;
+    font-weight: 600; /* Increased font weight */
+}
+
+/* Form Layout */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Stretch form fields to fill the container */
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Form Fields Styling */
+.contact-form label {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+/* Input and Textarea Styling */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px; /* Increased padding for comfort */
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Border color */
+    font-size: 1rem;
+    transition: border-color 0.3s; /* Smooth transition for border color */
+    background-color: #f5f5f5; /* Light background color */
+}
+
+/* Focus Effect */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #007BFF; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Submit Button Styling */
+.submit-button {
+    background: linear-gradient(90deg, #007BFF, #0056b3); /* Gradient background */
+    color: white;
+    padding: 12px 20px; /* Increased padding for a button */
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for button color and scale */
+}
+
+.submit-button:hover {
+    background: linear-gradient(90deg, #0056b3, #007BFF); /* Darker gradient on hover */
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+
+/* Middle Section Styling */
+.contact-middle-section {
+    text-align: center; /* Center-align text */
+    padding: 30px 20px; /* Add padding for spacing */
+    background-color: #002b51; /* Light background color for contrast */
+    margin: 20px 0; /* Margin to separate from other sections */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.contact-middle-section h2 {
+    font-size: 1.8rem; /* Heading font size */
+    color: #fff; /* Heading color */
+    margin-bottom: 10px; /* Space below heading */
+}
+
+.contact-middle-section p {
+    font-size: 1rem; /* Paragraph font size */
+    color: #eee; /* Text color */
+    max-width: 600px; /* Limit the width of the text */
+    margin: 0 auto; /* Center align text */
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .ContactUsImg {
+        height: 50vh;
+    }
+
+    .contact-title {
+        font-size: 2rem;
+    }
+
+    .contact-subtitle {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .ContactUsImg {
+        height: 40vh;
+    }
+
+    .contact-title {
+        font-size: 1.5rem;
+    }
+
+    .contact-subtitle {
+        font-size: 1rem;
+    }
+    .contact-form-section h2{
+        font-size: 1.8rem;
+    }
+    .contact-middle-section h2{
+        font-size: 1.5rem;
+    }
+}
