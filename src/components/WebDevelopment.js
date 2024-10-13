@@ -27,22 +27,22 @@ const WebDevelopment = () => {
       <div className="services-section">
         <h2 className="first-title">Our Services</h2>
         <div className="services-container">
-          <div className="service-card">
+          <Link to='/wordpress-development' className="service-card">
             <h3 className="service-title">WordPress Development</h3>
             <p className="service-description">Custom WordPress solutions to help build your brand and business online.</p>
-          </div>
-          <div className="service-card">
+          </Link>
+          <Link to='/Dynamic_WebDev' className="service-card">
             <h3 className="service-title">Dynamic Websites</h3>
             <p className="service-description">We create responsive and engaging websites for better user experience.</p>
-          </div>
-          <div className="service-card">
+          </Link>
+          <Link to='/E-commerce_WebApp' className="service-card">
             <h3 className="service-title">E-Commerce Solutions</h3>
             <p className="service-description">Developing e-commerce platforms that maximize sales and customer engagement.</p>
-          </div>
-          <div className="service-card">
+          </Link>
+          <Link to='/custom-webdev' className="service-card">
             <h3 className="service-title">Custom Web Applications</h3>
             <p className="service-description">Tailor-made web apps designed to meet your business needs and goals.</p>
-          </div>
+          </Link>
         </div>
       </div>
 
@@ -53,32 +53,7 @@ const WebDevelopment = () => {
         <Link to="/contact" className="cta-button">Contact Us</Link>
       </div>
 
-      {/* Testimonials Section */}
-      <div className="testimonials-section">
-        <h2 className="section-title">What Our Clients Say</h2>
-        <OwlCarousel
-          className="owl-theme"
-          loop
-          margin={10}
-          nav
-          items={1} // Only one testimonial visible at a time
-          autoplay
-          autoplayTimeout={3000}
-        >
-          <div className="testimonial-card">
-            <p>"Amazing service and outstanding results!"</p>
-            <p className="client-name">- John Doe, CEO</p>
-          </div>
-          <div className="testimonial-card">
-            <p>"The best web development experience I've ever had!"</p>
-            <p className="client-name">- Jane Smith, Founder</p>
-          </div>
-          {/* Add more testimonials if needed */}
-        </OwlCarousel>
       </div>
-
-      {/* Other sections remain unchanged */}
-    </div>
   );
 };
 

@@ -1,0 +1,213 @@
+/* Container */
+.seo-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f9fc;
+}
+
+/* Hero Section */
+.seo-hero {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.seo-hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(2px);
+}
+
+.seo-hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.seo-hero-text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.seo-hero-text p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Overview Section */
+.seo-overview {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.seo-overview h2 {
+    font-size: 2rem;
+    color: #007bff;
+}
+
+.seo-overview p {
+    font-size: 1rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Benefits Section */
+.seo-benefits {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.seo-benefits h2 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.seo-benefit-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.seo-benefit-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.seo-benefit-card h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+/* Services Offered Section */
+.seo-services-offered {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.seo-services-offered h2 {
+    font-size: 2rem;
+    color: #007bff;
+}
+
+.seo-services-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.seo-services-list li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.list_serv {
+    padding: 25px;
+    background: #007bff;
+    color: #fff;
+    border-radius: 8px;
+    margin: 10px 0; /* Added margin for better spacing */
+    text-align: left; /* Align text to the left */
+}
+.alignment {
+    margin-bottom: 25px;
+  }
+.list_serv p {
+    font-size: 1rem; /* Smaller font for description */
+    margin-top: 5px; /* Space between title and description */
+}
+
+/* Call to Action Section */
+.seo-contact {
+    background-color: #007bff;
+    padding: 30px 20px;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.seo-contact h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.seo-contact-btn {
+    padding: 12px 25px;
+    background-color: #ffffff;
+    color: #007bff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.seo-contact-btn:hover {
+    background-color: #e0e0e0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .seo-benefit-card {
+        width: calc(50% - 20px); /* Two cards per row on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .seo-hero-text h1 {
+        font-size: 1.8rem; /* Adjusted font size for smaller screens */
+        max-width: 100%;
+        width: 320px;
+    }
+
+    .seo-hero-text p {
+        font-size: 1rem; /* Adjusted paragraph size for readability */
+    }
+
+    .seo-overview h2,
+    .seo-benefits h2,
+    .seo-services-offered h2 {
+        font-size: 1.5rem; /* Smaller section headings */
+    }
+
+    .seo-contact h3 {
+        font-size: 1.5rem;
+    }
+
+    .seo-contact-btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    .seo-benefit-card {
+        width: 100%; /* Full width for cards on small screens */
+    }
+
+    .seo-services-list li {
+        font-size: 1rem; /* Smaller list items */
+        padding: 15px; /* Reduced padding for smaller screens */
+    }
+
+    .list_serv {
+        padding: 15px; /* Adjusted padding for smaller screens */
+        font-size: 1rem; /* Ensure list items are responsive */
+    }
+
+    .list_serv p {
+        font-size: 0.9rem; /* Smaller font for description on mobile */
+    }
+}

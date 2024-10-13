@@ -1,0 +1,263 @@
+/* Container */
+.email-marketing-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f9fc;
+}
+
+/* Hero Section */
+.email-hero {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.email-hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(2px);
+}
+
+.email-hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 0 15px;
+    border-radius: 10px; /* Rounded corners */
+}
+
+.email-hero-text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.email-hero-text p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Overview Section */
+.email-overview {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.email-overview h2 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+.Stay-Tune {
+    color: #555;
+    margin-top: 15px;
+  }
+
+.email-overview p {
+    font-size: 1rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.us_today {
+    margin-bottom: 15px;
+  }
+/* Benefits Section */
+.email-benefits {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.email-benefits h2 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.email-benefit-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.email-benefit-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.email-benefit-card h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+/* Services Offered Section */
+.email-services-offered {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.email-services-offered h2 {
+    font-size: 2rem;
+    color: #007bff;
+}
+
+.email-services-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.email-services-list li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.list_serv {
+    padding: 25px;
+    background: #007bff;
+    color: #fff;
+    border-radius: 8px;
+    margin: 10px 0; /* Added margin for better spacing */
+    text-align: left; /* Align text to the left */
+}
+
+.list_serv p {
+    font-size: 1rem; /* Smaller font for description */
+    margin-top: 5px; /* Space between title and description */
+}
+
+/* Testimonials Section */
+.email-testimonials {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.email-testimonials h2 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.testimonial-card {
+    background: #e9ecef;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px auto;
+    width: 80%;
+    max-width: 600px; /* Limit the width of the testimonial cards */
+}
+
+.testimonial-card p {
+    font-style: italic;
+    color: #555;
+}
+
+.testimonial-card strong {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Email Signup Form Section */
+.email-signup {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.email-signup h2 {
+    font-size: 2rem;
+    color: #007bff;
+}
+
+.signup-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.signup-form input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+    max-width: 250px;
+}
+
+.signup-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Call to Action Section */
+.email-contact {
+    margin: 40px 0;
+    text-align: center;
+    background: #007bff;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.email-contact h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.email-contact-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+    .email-hero-text h1 {
+        font-size: 1.5rem; /* Smaller font for mobile */
+        max-width: 100%;
+        width: 300px;
+    }
+    .email-hero-text p {
+        font-size: 0.9rem; /* Smaller font for mobile */
+    }
+    .email-benefit-card {
+        width: 90%; /* Full width for mobile */
+        margin: 10px auto; /* Center align */
+    }
+    .testimonial-card {
+        width: 90%; /* Full width for mobile */
+    }
+    .signup-form {
+        flex-direction: column;
+    }
+    .signup-form input {
+        margin-bottom: 10px; /* Add space below input */
+        max-width: 100%; /* Full width for mobile */
+    }
+    .email-overview h2{
+        font-size: 1.8rem;
+    }
+    .email-overview p{
+        font-size: 0.8rem;
+    }
+}

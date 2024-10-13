@@ -1,0 +1,266 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .android-app {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    background: linear-gradient(145deg, #ffffff, #e8f5e9);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  /* .android-app:hover {
+    transform: scale(1.02);
+  } */
+  
+  /* Top Section */
+  .first-section {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .first-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    /* transition: transform 0.3s ease; */
+  }
+  
+  /* .first-image:hover {
+    transform: scale(1.05);
+  } */
+  
+  @media (max-width: 768px) {
+    .first-image {
+      height: 250px;
+    }
+  }
+  
+  /* Content Section */
+  .content {
+    padding: 20px;
+    color: #333;
+  }
+  
+  .Android_head {
+    font-size: 2.8rem;
+    color: #00796b;
+    text-align: center;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #4caf50, #81c784);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  .just_descr {
+    font-size: 1.3rem;
+    line-height: 1.7;
+    color: #666;
+    margin-bottom: 40px;
+    text-align: center;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Expertise Section */
+  .exper-section {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .why_us {
+    font-size: 2.2rem;
+    color: #388e3c;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .why_us::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #4caf50;
+    margin: 10px auto 0;
+  }
+  
+  .choose_detail {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 1.1rem;
+    line-height: 2;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .choose_detail li {
+    background: url('https://www.svgrepo.com/show/404946/check-mark-button.svg') no-repeat left center;
+    background-size: 20px;
+    padding-left: 40px;
+    margin-bottom: 12px;
+  }
+  
+  /* Services Section */
+  .service-section {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .provide_serv {
+    font-size: 2.2rem;
+    color: #388e3c;
+    margin-bottom: 20px;
+  }
+  
+  .serv_descr {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+  }
+  
+  .serv_data {
+    list-style-type: none;
+    margin-left: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .serv_data li {
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    background-color: #e0f2f1;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    margin-right: 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .serv_data li:hover {
+    background-color: #a5d6a7;
+  }
+  
+  /* Technologies Section */
+  .technologie-section {
+    margin-bottom: 40px;
+  }
+  
+  .tech_uses {
+    font-size: 1.2rem;
+    margin-left: 20px;
+  }
+  
+  .tech_use_descr {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .tech_uses li {
+    margin-bottom: 12px;
+    color: #4caf50;
+    font-weight: bold;
+  }
+  
+  /* Testimonial Section */
+  .testimonial-section {
+    margin-bottom: 40px;
+  }
+  
+  .testi_another {
+    font-size: 2.2rem;
+    color: #388e3c;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .quote, .another-quote {
+    background-color: #f9fbe7;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid #81c784;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .another_descr, .Quote_descr {
+    font-style: italic;
+    font-size: 1.2rem;
+  }
+  
+  .Clie_name {
+    font-size: 1rem;
+    text-align: right;
+    color: #00796b;
+  }
+  
+  /* Call to Action Section */
+  .section {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .Redirect {
+    font-size: 2.2rem;
+    color: #4caf50;
+    margin-bottom: 20px;
+  }
+  
+  .redir_descr {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 1.3rem;
+    color: #fff;
+    background-color: #00796b;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0, 150, 136, 0.4);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #004d40;
+    box-shadow: 0 6px 20px rgba(0, 77, 64, 0.5);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .Android_head {
+      font-size: 2rem;
+    }
+  
+    .just_descr {
+      font-size: 1rem;
+    }
+  
+    .why_us, .provide_serv, .tech_uses, .testi_another, .Redirect {
+      font-size: 1.6rem;
+    }
+  
+    .cta-button {
+      padding: 10px 25px;
+      font-size: 1rem;
+    }
+  
+    .choose_detail, .serv_data {
+      text-align: left;
+    }
+  }
+  

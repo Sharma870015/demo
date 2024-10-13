@@ -1,0 +1,303 @@
+/* General Styles */
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+  }
+  
+  .ios-app {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f7;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  /* Top Section with Banner */
+  .top-section {
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+  }
+  
+  .ios-banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .top-section {
+      height: 400px;
+    }
+  }
+  
+  /* Apple Icon Section */
+  .icon-section {
+    text-align: center;
+    margin-top: -50px;
+  }
+  
+  .apple-icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  /* Content Section */
+  .content {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .ios-heading {
+    font-size: 2.5rem;
+    color: #004080;
+    margin-bottom: 20px;
+  }
+  
+  .ios-description {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  /* Benefits Section */
+  .benefits-section {
+    margin-top: 50px;
+  }
+  
+  .section-heading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #004080;
+    font-weight: bolder;
+    margin-top: 1rem;
+  }
+  
+  .benefits-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background-color: #004080;
+    padding: 20px;
+    width: 45%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .card p {
+    font-size: 0.9rem;
+    color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+    .benefits-cards {
+      flex-direction: column;
+    }
+  
+    .card {
+      width: 100%;
+    }
+  }
+  
+/* Technologies Section */
+.technologies-section {
+  margin-top: 40px;
+}
+
+.technologies-list {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.2rem;
+  color: #333;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four items in one line */
+  gap: 20px; /* Space between grid items */
+  justify-items: center; /* Center items */
+}
+
+.technologies-list li {
+  background-color: #004080;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+  width: 100%; /* Ensure all items take full width of grid cell */
+  max-width: 180px; /* Set a maximum width for items */
+}
+
+.technologies-list li:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.a_tag {
+  text-decoration: none;
+  color: #fff; /* Link color */
+  font-weight: bold; /* Bold links */
+}
+
+.a_tag:hover {
+  color: #005bb5; /* Darker color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .technologies-list {
+    grid-template-columns: repeat(2, 1fr); /* Two items in one line on smaller screens */
+  }
+  
+  .technologies-list li {
+    max-width: 150px; /* Adjust max width for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .technologies-list {
+    grid-template-columns: 1fr; /* Stack items vertically on very small screens */
+  }
+
+  .technologies-list li {
+    max-width: 100%; /* Allow full width for stacked items */
+  }
+}
+
+  
+/* Procedure Section */
+.procedure-section {
+  margin-top: 40px;
+}
+
+.procedure-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Space between cards */
+}
+
+.procedure-card {
+  perspective: 1000px; /* Create a 3D effect */
+  flex: 1 1 calc(33.33% - 20px); /* Three items per row, with some margin */
+  margin: 10px; /* Space around each card */
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 200px; /* Set a fixed height for the cards */
+  transition: transform 0.6s; /* Smooth transition */
+  transform-style: preserve-3d; /* Preserve 3D effect */
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Hide back face when not visible */
+  border-radius: 8px; /* Optional: Round corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.card-front {
+  background-color: #004080; /* Front card color */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-back {
+  background-color: #0050a8; /* Back card color */
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center; /* Center text in back */
+  transform: rotateY(180deg); /* Flip the back face */
+}
+.inc_pad {
+  padding: 10px;
+}
+
+.procedure-card:hover .card-inner {
+  transform: rotateY(180deg); /* Flip the card on hover */
+}
+
+.step-number {
+  font-size: 2rem; /* Step number font size */
+  font-weight: bold; /* Bold step number */
+  margin-bottom: 10px; /* Space below step number */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .procedure-card {
+    flex: 1 1 calc(50% - 20px); /* Two items per row on medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .procedure-card {
+    flex: 1 1 100%; /* Stack items vertically on small screens */
+    margin: 5px 0; /* Reduce margin for small screens */
+  }
+
+  .step-number {
+    font-size: 1.5rem; /* Smaller step number for mobile */
+  }
+
+  .card-inner {
+    height: 150px; /* Adjust height for mobile */
+  }
+}
+
+  
+  /* CTA Section */
+  .cta-section {
+    margin-top: 40px;
+  }
+  
+  .cta-button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #007aff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #005bb5;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .ios-heading {
+      font-size: 2rem;
+    }
+  
+    .ios-description {
+      font-size: 1rem;
+    }
+  
+    .cta-button {
+      padding: 10px 20px;
+      font-size: 1rem;
+    }
+  }
+  

@@ -46,6 +46,43 @@
     opacity: 1; /* Fully opaque */
   }
 }
+/* Button */
+
+.text-content button {
+  margin-top: 20px; /* Space between description and button */
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.text-content button:hover {
+  background-color: #0056b3;
+}
+
+.text-content button:focus {
+  outline: none;
+}
+
+/* Example class for an individual slide button */
+.btn-slide-0 {
+  background-color: #28a745;
+}
+
+.btn-slide-1 {
+  background-color: #ffc107;
+}
+
+.btn-slide-2 {
+  background-color: #ff5733;
+}
+
+/* Add custom button colors or styles for each slide if necessary */
+
 
 
 

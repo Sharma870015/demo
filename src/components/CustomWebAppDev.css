@@ -1,0 +1,177 @@
+/* Container */
+.custom-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f9fc;
+}
+
+/* Image with Overlay Text */
+.custom-image-container {
+    position: relative;
+    height: auto; /* Change height to auto for better responsiveness */
+    width: 100%;
+}
+
+.custom-hero-image {
+    width: 100%;
+    height: auto; /* Change height to auto */
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+
+.custom-overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 0 15px; /* Add some padding */
+}
+
+.custom-overlay-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.custom-overlay-text p {
+    font-size: 1.2rem; /* Base size for paragraph */
+    margin-top: 10px;
+}
+
+/* Section Heading */
+.custom-heading {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin: 20px 0;
+}
+
+/* Introductory Paragraph */
+.custom-intro {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+    padding: 0 20px;
+}
+
+/* Why Choose Us Section */
+.custom-choose-us {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.custom-choose-us h2 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+.Heading_desc {
+    color: #007bff;
+    margin-bottom: 25px;
+  }
+
+.custom-choose-us p {
+    font-size: 1rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Technologies Section */
+.custom-technologies {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.custom-tech-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.custom-tech-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-icon {
+    font-size: 2rem;
+    color: #007bff;
+}
+
+/* Contact Section */
+.custom-contact {
+    background-color: #007bff;
+    padding: 30px 20px;
+    color: white;
+    border-radius: 10px;
+}
+
+.custom-contact h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.custom-contact-btn {
+    padding: 12px 25px;
+    background-color: #ffffff;
+    color: #007bff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.custom-contact-btn:hover {
+    background-color: #e0e0e0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .custom-tech-card {
+        width: calc(50% - 20px); /* Two cards per row on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .custom-overlay-text h1 {
+        font-size: 1.8rem; /* Decrease font size for smaller screens */
+        max-width: 100%;
+        width: 300px;
+    }
+
+    .custom-overlay-text p {
+        font-size: 0.9rem; /* Adjust paragraph size for readability */
+    }
+
+    .custom-heading {
+        font-size: 1.8rem;
+    }
+
+    .custom-intro {
+        font-size: 0.9rem;
+    }
+
+    .custom-tech-card {
+        width: 100%; /* One card per row on small screens */
+    }
+
+    .custom-contact h3 {
+        font-size: 1.5rem;
+    }
+
+    .custom-contact-btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}

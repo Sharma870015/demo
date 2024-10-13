@@ -1,12 +1,39 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import './ContactUs.css'; // Separate CSS file for styling
 import { FaPhoneAlt, FaEnvelope, FaWhatsapp } from "react-icons/fa"; // Importing icons
 
 const ContactUs = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: ""
+  });
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    
+    const { name, email, message } = formData;
+    const whatsappNumber = "+918700156237"; // Your WhatsApp number (with country code)
+
+    // Create a WhatsApp message URL
+    const whatsappMessage = `https://wa.me/${whatsappNumber}?text=Hello,%20I%20am%20${encodeURIComponent(name)}.%20My%20email%20is%20${encodeURIComponent(email)}.%20Here%20is%20my%20message:%20${encodeURIComponent(message)}`;
+
+    // Redirect to the WhatsApp URL
+    window.location.href = whatsappMessage;
+  };
+
   return (
     <div className="contact-us-container">
       {/* First Section: Background Image with Heading */}
@@ -53,15 +80,39 @@ const ContactUs = () => {
       {/* Third Section: Contact Form */}
       <div className="contact-form-section">
         <h2>Send Us a Message</h2>
-        <form className="contact-form">
+        <form className="contact-form" onSubmit={handleSubmit}>
           <label htmlFor="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your Name" required />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+          />
 
           <label htmlFor="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Your Email" required />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
 
           <label htmlFor="message">Message</label>
-          <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Your Message"
+            rows="4"
+            value={formData.message}
+            onChange={handleChange}
+            required
+          ></textarea>
 
           <button type="submit" className="submit-button">Submit</button>
         </form>

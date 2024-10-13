@@ -25,32 +25,32 @@ const DropdownMenu = () => {
             {/* Call scrollToTop on Home click */}
             <li><Link to="/" onClick={scrollToTop}>Home</Link></li>
             <li><Link to="/about">About</Link></li>
-            <li><a href='#'>Services +</a>
+            <li><a href='/Services'>Services +</a>
               <ul>
                 <li><a href='/mobileApp-development'>Mobile App Development +</a>
                   <ul>
-                    <li><a href='#'>Android App Development</a></li>
-                    <li><a href='#'>iOS App Development</a></li>
-                    <li><a href='#'>iPad App Development</a></li>
-                    <li><a href='#'>Apple Watch App Development</a></li>
+                    <li><a href='/android'>Android App Development</a></li>
+                    <li><a href='/ios-development'>iOS App Development</a></li>
+                    <li><Link to="/iPad-development">iPad App Development</Link></li>
+                    <li><a href='/AppleWatch-App'>Apple Watch App Development</a></li>
                   </ul>
                 </li>
                 <li><a href='/web-development'>Web Development +</a>
                   <ul>
-                    <li><a href='#'>WordPress Website Development</a></li>
-                    <li><a href='#'>Dynamic Website Development</a></li>
-                    <li><a href='#'>Custom Web App Development</a></li>
-                    <li><a href='#'>E-commerce Web App Development</a></li>
+                    <li><a href='/wordpress-development'>WordPress Website Development</a></li>
+                    <li><a href='/Dynamic_WebDev'>Dynamic Website Development</a></li>
+                    <li><a href='/custom-webdev'>Custom Web App Development</a></li>
+                    <li><a href='/E-commerce_WebApp'>E-commerce Web App Development</a></li>
                   </ul>
                 </li>
                 <li><a href='/digital-marketing'>Digital Marketing</a>
                   <ul>
-                    <li><a href='#'>SEO Services</a></li>
-                    <li><a href='#'>Email Marketing</a></li>
-                    <li><a href='#'>PPC Services</a></li>
-                    <li><a href='#'>Social Media Marketing</a></li>
-                    <li><a href='#'>Affiliate Marketing</a></li>
-                    <li><a href='#'>E-commerce Marketing</a></li>
+                    <li><a href='/SEO-Services'>SEO Services</a></li>
+                    <li><a href='/EmailMarketingService'>Email Marketing</a></li>
+                    <li><a href='/PPC-Services'>PPC Services</a></li>
+                    <li><a href='/socialMedia-Marketing'>Social Media Marketing</a></li>
+                    <li><a href='/Affiliate-marketing'>Affiliate Marketing</a></li>
+                    <li><a href='/Ecommerce-marketing'>E-commerce Marketing</a></li>
                   </ul>
                 </li>
               </ul>
@@ -68,7 +68,7 @@ const DropdownMenu = () => {
                 <li><a href='#'>Media & Entertainment</a></li>
               </ul>
             </li>
-            <li><Link className='contactOpt' to="/contact">Contact Us</Link></li> {/* Link to Contact Us page */}
+            <li><Link className='contactO' to="/contact">Contact Us</Link></li> {/* Link to Contact Us page */}
           </ul>
         </nav>
       </header>

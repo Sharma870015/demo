@@ -40,47 +40,47 @@ const DigitalMarketing = () => {
         </p>
 
         <div className="services-container">
-          <div className="service-card">
+          <Link to='/SEO-Services' className="service-card">
             <h2 className="service-title">SEO Services</h2>
             <p className="service-description">
               Improve your website's visibility on search engines through strategic SEO techniques and content optimization.
             </p>
-          </div>
+          </Link>
 
-          <div className="service-card">
+          <Link to='/EmailMarketingService' className="service-card">
             <h2 className="service-title">Email Marketing</h2>
             <p className="service-description">
               Engage your audience with personalized email campaigns that drive conversions and build customer loyalty.
             </p>
-          </div>
+          </Link>
 
-          <div className="service-card">
+          <Link to='/PPC-Services' className="service-card">
             <h2 className="service-title">PPC Services</h2>
             <p className="service-description">
               Maximize your ROI with targeted pay-per-click advertising that reaches your ideal audience at the right time.
             </p>
-          </div>
+          </Link>
 
-          <div className="service-card">
+          <Link to='/socialMedia-Marketing' className="service-card">
             <h2 className="service-title">Social Media Marketing</h2>
             <p className="service-description">
               Build your brand on social media platforms through engaging content and community management strategies.
             </p>
-          </div>
+          </Link>
 
-          <div className="service-card">
+          <Link to='/Affiliate-marketing' className="service-card">
             <h2 className="service-title">Affiliate Marketing</h2>
             <p className="service-description">
               Partner with affiliates to expand your reach and drive sales through performance-based marketing strategies.
             </p>
-          </div>
+          </Link>
 
-          <div className="service-card">
+          <Link to='/Ecommerce-marketing' className="service-card">
             <h2 className="service-title">E-commerce Marketing</h2>
             <p className="service-description">
               Enhance your online store's visibility and sales with tailored marketing strategies for e-commerce businesses.
             </p>
-          </div>
+          </Link>
         </div>
 
         {/* Statistics Section */}

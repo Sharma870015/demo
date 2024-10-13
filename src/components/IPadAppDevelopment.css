@@ -1,0 +1,285 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* iPad App Development Section */
+.ipad-app-development {
+    background: linear-gradient(135deg, #004080 30%, #007aff 70%);
+    color: #fff;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-wrapper {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.title {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+.intro-text {
+    font-size: 1.25rem;
+    text-align: center;
+    margin-bottom: 60px;
+    opacity: 0.85;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+/* Procedure Section */
+.procedure-section, .benefits-section {
+    margin-bottom: 60px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.procedure-cards, .benefit-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.procedure-card, .benefit-card {
+    background: #ffffff33;
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px;
+    width: calc(33.33% - 30px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.procedure-card:hover, .benefit-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+.card-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    color: white;
+}
+
+.step-number {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #ffcc00;
+}
+
+.step-description {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Benefits Section */
+.benefit-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.benefit-card p {
+    font-size: 1.1rem;
+    opacity: 0.85;
+}
+
+
+/* Technologies Section */
+.technologies-section {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.technologies-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.technologies-list li {
+  background: #ffffff33;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+/* Case Studies Section */
+.case-studies-section {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.case-study-card {
+  background: #ffffff33;
+  padding: 20px;
+  margin: 10px auto; /* Center the card horizontally */
+  border-radius: 15px;
+  width: calc(33.33% - 30px);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.case-study-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.25);
+  margin-top: 1rem;
+}
+
+.case-study-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.case-study-card p {
+  font-size: 1.1rem;
+  opacity: 0.85;
+}
+
+/* Responsive Design for Case Studies Section */
+@media (max-width: 768px) {
+  .case-study-card {
+    width: calc(50% - 30px); /* Adjust width for tablets */
+    margin: 15px auto; /* Center horizontally */
+  }
+}
+
+@media (max-width: 480px) {
+  .case-study-card {
+    width: calc(100% - 40px); /* Adjust width for mobiles */
+    margin: 20px auto; /* Center horizontally */
+  }
+
+  .case-study-card h3 {
+    font-size: 1.5rem; /* Adjust font size */
+  }
+
+  .case-study-card p {
+    font-size: 1rem; /* Adjust font size */
+  }
+}
+
+
+/* Testimonials Section */
+.testimonials-section {
+  margin-bottom: 60px;
+}
+
+.testimonial-card {
+  background: #ffffff33;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.testimonial-card p {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.testimonial-card h4 {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+
+/* Animations */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .procedure-card, .benefit-card {
+        width: calc(50% - 30px);
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.8rem;
+    }
+
+    .intro-text {
+        font-size: 1.2rem;
+    }
+
+    .procedure-card, .benefit-card {
+        width: calc(100% - 30px);
+    }
+
+    .procedure-card, .benefit-card {
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .intro-text {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+
+    .procedure-card {
+        height: 180px;
+    }
+
+    .step-number {
+        font-size: 1.8rem;
+    }
+
+    .step-description {
+        font-size: 1rem;
+    }
+
+    .benefit-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .benefit-card p {
+        font-size: 1rem;
+    }
+}

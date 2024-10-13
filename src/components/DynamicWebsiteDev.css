@@ -1,0 +1,195 @@
+/* Container */
+.dynamic-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+  }
+  
+  /* Image with Overlay Text */
+  .dynamic-image-container {
+    position: relative;
+    height: auto; /* Change from fixed height to auto */
+    width: 100%;
+    overflow: hidden; /* Prevent overflow of the image */
+  }
+  
+  .dynamic-hero-image {
+    width: 100%;
+    height: auto; /* Change from fixed height to auto */
+    object-fit: cover;
+    filter: blur(3px);
+  }
+  
+  .dynamic-overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+  }
+  
+  .dynamic-overlay-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .dynamic-heading {
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    margin: 20px 0;
+  }
+  
+  .dynamic-description {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 40px;
+    padding: 0 20px;
+  }
+  
+  /* Why Choose Us Section */
+  .dynamic-choose-us {
+    margin: 40px 0;
+    text-align: center;
+  }
+  
+  .dynamic-choose-us h2 {
+    font-size: 2rem;
+    color: #0073aa;
+  }
+  
+  .dynamic-choose-us p {
+    font-size: 1rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Technologies Section */
+  .dynamic-technologies {
+    margin: 40px 0;
+    text-align: center;
+  }
+  
+  .dynamic-tech-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .dynamic-tech-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dynamic-icon {
+    font-size: 2rem;
+    color: #0073aa;
+  }
+  
+  /* Expert Profiles Section */
+  .dynamic-experts {
+    margin: 40px 0;
+    text-align: center;
+  }
+  
+  .dynamic-expert-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .dynamic-expert-card {
+    background-color: #e9ecef;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+  }
+  
+  /* Contact Section */
+  .dynamic-contact {
+    background-color: #0073aa;
+    padding: 30px 20px;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .dynamic-contact h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .dynamic-contact-btn {
+    padding: 12px 25px;
+    background-color: #ffffff;
+    color: #0073aa;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .dynamic-contact-btn:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .dynamic-tech-card,
+    .dynamic-expert-card {
+      width: calc(50% - 20px); /* Two cards per row on tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .dynamic-heading {
+      font-size: 2rem;
+    }
+  
+    .dynamic-description {
+      font-size: 1rem;
+    }
+  
+    .dynamic-tech-card,
+    .dynamic-expert-card {
+      width: 100%; /* One card per row on small screens */
+    }
+  
+    .dynamic-expert-card {
+      padding: 15px;
+    }
+  
+    .dynamic-contact h3 {
+      font-size: 1.5rem;
+    }
+  
+    .dynamic-contact-btn {
+      padding: 10px 20px;
+      font-size: 1rem;
+    }
+  
+    /* Adjust image overlay text for smaller screens */
+    .dynamic-overlay-text h1 {
+      font-size: 1.6rem;
+      max-width: 100%;
+      width: 300px;
+    }
+  
+    .dynamic-overlay-text p {
+      font-size: 0.8rem; /* Adjust paragraph size for readability */
+    }
+  }
+
+  

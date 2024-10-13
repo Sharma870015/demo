@@ -1,0 +1,258 @@
+/* Container */
+.ppc-services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f9fc;
+}
+
+/* Hero Section */
+.ppc-hero {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    animation: fadeIn 1.5s ease-in-out; /* Animation */
+}
+
+.ppc-hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(2px);
+}
+
+.ppc-hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the text both horizontally and vertically */
+    color: white;
+    text-align: center;
+    padding: 0 15px;
+    border-radius: 10px; /* Rounded corners */
+    animation: reverse;
+}
+
+.ppc-hero-text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.ppc-hero-text p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.ppc-cta-button {
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s; /* Transition effect */
+}
+
+.ppc-cta-button:hover {
+    background: #0056b3; /* Darker blue on hover */
+}
+
+/* Overview Section */
+.ppc-overview {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.ppc-overview h2 {
+    font-size: 1.7rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.ppc-overview p {
+    font-size: 1rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Benefits Section */
+.ppc-benefits {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.ppc-benefits h2 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.ppc-benefit-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.ppc-benefit-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s; /* Animation effect */
+}
+
+.ppc-benefit-card:hover {
+    transform: translateY(-10px); /* Hover effect */
+}
+
+.ppc-benefit-card h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+/* Services Offered Section */
+.ppc-services-offered {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.ppc-services-offered h2 {
+    font-size: 2rem;
+    color: #007bff;
+}
+
+.ppc-services-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ppc-services-list li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.list_serv {
+    padding: 25px;
+    background: #007bff;
+    color: #fff;
+    border-radius: 8px;
+    margin: 10px 0; /* Added margin for better spacing */
+    text-align: left; /* Align text to the left */
+}
+
+.list_serv p {
+    font-size: 1rem; /* Smaller font for description */
+    margin-top: 5px; /* Space between title and description */
+}
+
+/* Testimonials Section */
+.ppc-testimonials {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.ppc-testimonials h2 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.testimonial-card {
+    background: #e9ecef;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px auto;
+    width: 80%;
+    max-width: 600px; /* Limit the width of the testimonial cards */
+}
+
+.testimonial-card p {
+    font-style: italic;
+    color: #555;
+}
+
+.testimonial-card strong {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Call to Action Section */
+.ppc-contact {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.ppc-contact h3 {
+    font-size: 1.8rem;
+    color: #007bff;
+}
+
+.ppc-contact-btn {
+    background: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s; /* Transition effect */
+}
+
+.ppc-contact-btn:hover {
+    background: #218838; /* Darker green on hover */
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .ppc-hero {
+        height: 300px; /* Adjust height for mobile */
+    }
+
+    .ppc-hero-text h1 {
+        font-size: 1.8rem; /* Smaller font size for mobile */
+        max-width: 100%;
+        width: 300px;
+    }
+
+    .ppc-hero-text p {
+        font-size: 1rem; /* Smaller font size for mobile */
+    }
+
+    .ppc-benefit-card {
+        width: 100%; /* Full width for mobile */
+        margin-bottom: 15px; /* Space between cards */
+    }
+
+    .ppc-contact-btn,
+    .ppc-cta-button {
+        width: 100%; /* Full width buttons on mobile */
+    }
+}

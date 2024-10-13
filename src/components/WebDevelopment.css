@@ -40,6 +40,9 @@
   text-align: center;
 }
 
+.first-title {
+  margin-bottom: 2rem;
+}
 .section-title {
   font-size: 2.5rem;
   margin-bottom: 20px;

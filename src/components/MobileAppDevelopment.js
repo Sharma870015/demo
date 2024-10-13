@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import './MobileAppDevelopment.css'
 import Mobile from './Android.jpg'
+import { Link } from "react-router-dom";
 
 const MobileAppDevelopment = () => {
   useEffect(() => {
@@ -27,33 +28,33 @@ const MobileAppDevelopment = () => {
       </p>
 
       <div className="services-container">
-        <div className="service-card">
+        <Link to='/android' className="service-card">
           <h2 className="service-title">Android App Development</h2>
           <p className="service-description">
             Building scalable, robust, and user-friendly Android applications with a focus on performance and engagement.
           </p>
-        </div>
+        </Link>
 
-        <div className="service-card">
+        <Link to='/ios-development' className="service-card">
           <h2 className="service-title">iOS App Development</h2>
           <p className="service-description">
             Expertise in creating high-quality iOS apps with intuitive interfaces, ensuring compatibility with Apple devices.
           </p>
-        </div>
+        </Link>
 
-        <div className="service-card">
+        <Link to='/iPad-development' className="service-card">
           <h2 className="service-title">iPad App Development</h2>
           <p className="service-description">
             Cross-platform solutions for seamless app experiences across both iOS and Android platforms, saving time and resources.
           </p>
-        </div>
+        </Link>
 
-        <div className="service-card">
+        <Link to='/AppleWatch-App' className="service-card">
           <h2 className="service-title">Apple Watch App Development</h2>
           <p className="service-description">
           Develop high-performance, visually stunning iPad apps that deliver seamless experiences, maximizing productivity and user satisfaction across all screen sizes.
           </p>
-        </div>
+        </Link>
       </div>
     </div>
     </div>

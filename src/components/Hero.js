@@ -25,91 +25,107 @@ const Hero = () => {
       heading: "Grow with Digital Marketing",
       description:
         "Unlock your brand’s potential with tailored digital marketing strategies designed to boost growth and engagement.",
+      buttonText: "Learn More",
     },
     {
       image: photo12,
       heading: "SEO Services",
       description:
         "Boost your online visibility and drive organic traffic with tailored SEO strategies that enhance search engine rankings.",
+      buttonText: "See SEO Packages",
     },
     {
       image: photo13,
       heading: "Email Marketing",
       description:
         "Engage your audience and drive conversions with targeted email campaigns that deliver personalized content and valuable insights.",
+      buttonText: "Get Started",
     },
     {
       image: photo14,
       heading: "PPC Services",
       description:
         "Maximize your online visibility and drive instant traffic with our targeted Pay-Per-Click campaigns tailored to your business goals.",
+      buttonText: "Explore PPC",
     },
     {
       image: photo15,
       heading: "Social Media Marketing",
       description:
         "Engage your audience and boost brand awareness through strategic social media campaigns designed to drive traffic and conversions.",
+      buttonText: "Boost Your Brand",
     },
     {
       image: photo16,
       heading: "E-commerce Marketing",
       description:
         "Optimize your online store’s visibility and sales with targeted marketing strategies, including SEO, email campaigns, and social media outreach.",
+      buttonText: "Grow Sales",
     },
     {
       image: photo1,
       heading: "Mobile App Development",
       description:
         "Create innovative mobile apps tailored to your business needs, offering seamless performance and exceptional user experiences across all platforms.",
+      buttonText: "Build Your App",
     },
     {
       image: photo3,
       heading: "Android App Development",
       description:
         "Develop high-performance Android apps that deliver seamless functionality, engaging user experiences, and are tailored to meet your business goals.",
+      buttonText: "Get Android App",
     },
     {
       image: photo4,
       heading: "iOS App Development",
       description:
         "Build stunning iOS apps that combine elegant design with powerful functionality, delivering exceptional user experiences and seamless performance on all Apple devices.",
+      buttonText: "Create iOS App",
     },
     {
       image: photo5,
       heading: "iPad App Development",
       description:
         "Design and develop feature-rich iPad apps that leverage the device's capabilities, providing intuitive interfaces and engaging experiences for users on the go.",
+      buttonText: "Develop iPad App",
     },
     {
       image: photo6,
       heading: "Apple Watch App Development",
       description:
         "Create innovative Apple Watch apps that deliver essential functionality and notifications right to the wrist, enhancing user experiences with seamless interactions and tailored features.",
+      buttonText: "Apple Watch App",
     },
     {
       image: photo2,
       heading: "Web Development",
       description: "We build responsive, high-performance websites and custom web apps that drive growth, improve engagement, and enhance overall user experiences effectively.",
+      buttonText: "View Web Services",
     },
     {
       image: photo8,
-      heading: "Wordpress web Development",
+      heading: "Wordpress Web Development",
       description: "Transform your ideas into stunning websites with our expert WordPress development, designed for performance and user engagement.",
+      buttonText: "WordPress Solutions",
     },
     {
       image: photo9,
-      heading: "Dynamic website Development",
+      heading: "Dynamic Website Development",
       description: "Create interactive and engaging websites that adapt to user needs and deliver real-time content for an enhanced online experience.",
+      buttonText: "Dynamic Websites",
     },
     {
       image: photo10,
-      heading: "Custom web App Development",
+      heading: "Custom Web App Development",
       description: "Design and build tailored web applications to meet your specific business requirements, ensuring optimal performance and user experience.",
+      buttonText: "Custom Web Apps",
     },
     {
       image: photo11,
-      heading: "E-Commerce web App Development",
+      heading: "E-Commerce Web App Development",
       description: "Create robust and scalable e-commerce platforms that enhance online shopping experiences and drive sales growth.",
+      buttonText: "Start Your Store",
     },
   ];
 
@@ -130,19 +146,19 @@ const Hero = () => {
   };
 
   useEffect(() => {
-    setShowText(false); // Hide text initially
+    setShowText(false);
     const timer = setTimeout(() => {
-      setShowText(true); // Show text after a delay
-    }, 300); // Delay for 300ms before showing the text
+      setShowText(true);
+    }, 300);
 
-    return () => clearTimeout(timer); // Cleanup timer on unmount
-  }, [currentIndex]); // Runs on slide change
+    return () => clearTimeout(timer);
+  }, [currentIndex]);
 
   useEffect(() => {
-    const interval = setInterval(goToNext, 5000); // Change slide every 5 seconds
+    const interval = setInterval(goToNext, 5000);
 
-    return () => clearInterval(interval); // Cleanup interval on unmount
-  }, [currentIndex]); // Rerun if currentIndex changes
+    return () => clearInterval(interval);
+  }, [currentIndex]);
 
   return (
     <div
@@ -151,7 +167,6 @@ const Hero = () => {
       onMouseLeave={() => setIsHovered(false)}
     >
       <div className="slide">
-        {/* Wrap the first image with Link to navigate to /digital-marketing */}
         {currentIndex === 0 ? (
           <Link to="/digital-marketing">
             <img src={slides[currentIndex].image} alt="slide" className="image" />
@@ -162,6 +177,8 @@ const Hero = () => {
         <div className={`text-content ${showText ? 'pop-up' : ''}`}>
           <h2>{slides[currentIndex].heading}</h2>
           <p>{slides[currentIndex].description}</p>
+          {/* Add individual buttons for each slide */}
+          <button className={`btn-slide-${currentIndex}`}>{slides[currentIndex].buttonText}</button>
         </div>
       </div>
 
