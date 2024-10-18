@@ -7,11 +7,131 @@
     background-color: #f7f9fc;
 }
 
+
+/* Why Choose Us Section */
+.email-choose-us {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.email-choose-us h2 {
+    font-size: 2rem;
+    color: #0073aa;
+    margin-bottom: 15px;
+}
+
+.choose-us-list {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0 auto; /* Center the list */
+    display: inline-block; /* Make list items inline */
+    max-width: 600px; /* Limit width for better readability */
+}
+
+.choose-us-list li {
+    font-size: 1.2rem;
+    margin: 15px 0;
+    color: #555;
+    background: #e7f3ff; /* Light background for emphasis */
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners */
+    transition: background 0.3s ease; /* Transition effect */
+}
+
+.choose-us-list li:hover {
+    background: #cce5ff; /* Change background on hover */
+}
+
+/* FAQ Section */
+.email-faq {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.email-faq h2 {
+    font-size: 2rem;
+    color: #0073aa;
+    margin-bottom: 15px;
+}
+
+.faq-item {
+    margin: 15px 0;
+    text-align: left;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #f8f9fa; /* Light background for better visibility */
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease; /* Transition effect */
+}
+
+.faq-item:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.faq-item h3 {
+    font-size: 1.5rem;
+    color: #0073aa;
+}
+
+.faq-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+    .email-hero-text h1 {
+        font-size: 1.5rem; /* Smaller font for mobile */
+        max-width: 100%;
+        width: 300px;
+    }
+    .email-hero-text p {
+        font-size: 0.9rem; /* Smaller font for mobile */
+    }
+    .email-benefit-card {
+        width: 90%; /* Full width for mobile */
+        margin: 10px auto; /* Center align */
+    }
+    .testimonial-card {
+        width: 90%; /* Full width for mobile */
+    }
+    .signup-form {
+        flex-direction: column;
+    }
+    .signup-form input {
+        margin-bottom: 10px; /* Add space below input */
+        max-width: 100%; /* Full width for mobile */
+    }
+    .email-overview h2 {
+        font-size: 1.8rem;
+    }
+    .email-overview p {
+        font-size: 0.8rem;
+    }
+    .email-choose-us h2, .email-faq h2 {
+        font-size: 1.5rem; /* Adjust for mobile */
+    }
+    .choose-us-list li {
+        font-size: 1rem; /* Adjust for mobile */
+    }
+    .faq-item h3 {
+        font-size: 1.2rem; /* Adjust for mobile */
+    }
+    .email-hero{
+        height: 200px;
+    }
+}
+
+
 /* Hero Section */
 .email-hero {
     position: relative;
     height: 400px;
     overflow: hidden;
+    animation: fadeIn 1.5s ease-in-out; /* Animation */
 }
 
 .email-hero-image {
@@ -30,7 +150,10 @@
     text-align: center;
     padding: 0 15px;
     border-radius: 10px; /* Rounded corners */
+    animation: reverse;
 }
+
+
 
 .email-hero-text h1 {
     font-size: 2.5rem;
@@ -50,7 +173,7 @@
 
 .email-overview h2 {
     font-size: 2rem;
-    color: #007bff;
+    color: #0073aa;
     margin-bottom: 15px;
 }
 .Stay-Tune {
@@ -76,7 +199,7 @@
 
 .email-benefits h2 {
     font-size: 2rem;
-    color: #007bff;
+    color: #0073aa;
     margin-bottom: 15px;
 }
 
@@ -99,7 +222,7 @@
 
 .email-benefit-card h3 {
     font-size: 1.5rem;
-    color: #007bff;
+    color: #0073aa;
 }
 
 /* Services Offered Section */
@@ -209,7 +332,7 @@
 .email-contact {
     margin: 40px 0;
     text-align: center;
-    background: #007bff;
+    background: #0073aa;
     color: white;
     padding: 20px;
     border-radius: 10px;

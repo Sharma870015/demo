@@ -9,9 +9,10 @@
   }
   
   /* Image with Overlay Text */
+  
   .wp-image-container {
     position: relative;
-    height: 800px;
+    height: 400px;
     width: 100%;
   }
   
@@ -96,6 +97,82 @@
     color: #0073aa;
     margin-bottom: 10px;
   }
+
+  /* WordPress Services Section */
+.wp-services {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.wp-service-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.wp-service-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  flex-basis: calc(25% - 20px);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.wp-service-card:hover {
+  transform: translateY(-10px);
+}
+
+.wp-service-icon {
+  font-size: 2rem;
+  color: #0073aa;
+  margin-bottom: 10px;
+}
+
+.wp-service-card h3 {
+  font-size: 1.5rem;
+  color: #0073aa;
+  margin-bottom: 10px;
+}
+
+.wp-service-card p {
+  font-size: 1rem;
+  color: #555;
+}
+.clr-bottom {
+  margin-bottom: 25px;
+  color: #0073aa;
+  font-size: 35px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .wp-service-card {
+    flex-basis: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .wp-service-card {
+    flex-basis: 100%; /* Full-width on mobile devices */
+  }
+
+  .wp-service-icon {
+    font-size: 1.8rem;
+  }
+
+  .wp-service-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .wp-service-card p {
+    font-size: 0.9rem;
+  }
+}
+
   
 /* Why Choose Us Section */
 .wp-choose-us {
@@ -258,7 +335,7 @@
     }
   
     .wp-image-container {
-      height: 400px;
+      height: 200px;
     }
     .descr_hea{
         font-size: 0.8rem;

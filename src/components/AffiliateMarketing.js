@@ -1,8 +1,8 @@
 import React from 'react';
 import './AffiliateMarketing.css';
-import image from './AM.jpg'
-import Photo from './Affiliate.jpg'
-import CS from './CS.jpg'
+import image from './AM.jpg';
+import Photo from './Affiliate.jpg';
+import CS from './CS.jpg';
 
 const AffiliateMarketing = () => {
   return (
@@ -10,7 +10,7 @@ const AffiliateMarketing = () => {
       {/* Hero Section */}
       <section className="affiliate-hero">
         <img
-          src={Photo} // Replace with actual image URL
+          src={Photo}
           alt="Affiliate Marketing"
           className="affiliate-hero-image"
         />
@@ -21,56 +21,65 @@ const AffiliateMarketing = () => {
         </div>
       </section>
 
-      {/* Services Section */}
+      {/* Affiliate Services Description Section */}
       <section className="affiliate-services">
         <h2>Our Affiliate Marketing Services</h2>
+        <p>
+          Our affiliate marketing services are designed to help you leverage partnerships to boost your brand's visibility and sales. We provide comprehensive strategies that include tracking performance, optimizing campaigns, and increasing your revenue streams through effective affiliate collaborations.
+        </p>
+      </section>
+
+      {/* Our Services Section */}
+      <section className="services-section">
+        <h2>Our Services</h2>
         <div className="services-container">
-          {/* Affiliate Network Management */}
           <div className="service-card">
-            <img
-              src={image} // Replace with actual image URL
-              alt="Affiliate Network Management"
-            />
-            <h3>Affiliate Network Management</h3>
-            <p>Manage, grow, and optimize your affiliate networks for maximum profits.</p>
+            <h3>Performance Analysis</h3>
+            <p>Analyze and optimize your affiliate performance metrics for better ROI.</p>
           </div>
-          {/* Performance Tracking */}
           <div className="service-card">
-            <img
-              src={Photo} // Replace with actual image URL
-              alt="Performance Tracking"
-            />
-            <h3>Performance Tracking</h3>
-            <p>Track your affiliate campaigns in real-time for better optimization.</p>
+            <h3>Recruitment of Affiliates</h3>
+            <p>Identify and onboard the right affiliates to promote your brand effectively.</p>
           </div>
-          {/* Commission Strategy */}
           <div className="service-card">
-            <img
-              src={CS} // Replace with actual image URL
-              alt="Commission Strategy"
-            />
-            <h3>Commission Strategy</h3>
-            <p>Set up the perfect commission plan to attract top affiliates.</p>
+            <h3>Marketing Strategy Development</h3>
+            <p>Create tailored marketing strategies that align with your brand's goals.</p>
+          </div>
+          <div className="service-card">
+            <h3>Commission Management</h3>
+            <p>Manage commissions efficiently to ensure affiliates are rewarded fairly.</p>
           </div>
         </div>
       </section>
 
-      {/* Approach Section */}
-      <section className="affiliate-approach">
-        <h2>Our Approach</h2>
-        <div className="approach-container">
-          <div className="approach-step">
-            <h4>1. Recruitment</h4>
-            <p>We recruit top affiliates to represent your brand and drive traffic.</p>
-          </div>
-          <div className="approach-step">
-            <h4>2. Campaign Setup</h4>
-            <p>Designing and setting up effective campaigns for affiliates.</p>
-          </div>
-          <div className="approach-step">
-            <h4>3. Results Optimization</h4>
-            <p>Ongoing campaign monitoring to ensure consistent performance.</p>
-          </div>
+      {/* Why Choose Us Section */}
+      <section className="affiliate-why-choose-us">
+        <h2>Why Choose Us?</h2>
+        <p>
+          Our team is dedicated to maximizing your affiliate potential with transparent communication and measurable results. We focus on building long-term partnerships that benefit all parties involved.
+        </p>
+        <ul>
+          <li>Experienced Affiliate Managers</li>
+          <li>Data-Driven Decision Making</li>
+          <li>24/7 Support and Guidance</li>
+          <li>Custom Solutions for Every Business</li>
+        </ul>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="affiliate-faq">
+        <h2>Frequently Asked Questions</h2>
+        <div className="faq-item">
+          <h3>How does affiliate marketing work?</h3>
+          <p>Affiliates promote your products, and when sales are made through their links, they earn a commission.</p>
+        </div>
+        <div className="faq-item">
+          <h3>What types of products can I promote?</h3>
+          <p>You can promote any product that aligns with your audience's interests and needs.</p>
+        </div>
+        <div className="faq-item">
+          <h3>How do I track my affiliate sales?</h3>
+          <p>We provide detailed tracking through analytics tools to monitor sales and conversions.</p>
         </div>
       </section>
 

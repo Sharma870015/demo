@@ -14,6 +14,13 @@
     overflow: hidden;
 }
 
+@media (max-width: 480px) {
+    .seo-hero{
+        height: 200px;
+        width: 100%;
+    }
+}
+
 .seo-hero-image {
     width: 100%;
     height: 100%;
@@ -67,7 +74,7 @@
 
 .seo-benefits h2 {
     font-size: 2rem;
-    color: #007bff;
+    color: #0073aa;
     margin-bottom: 15px;
 }
 
@@ -90,7 +97,7 @@
 
 .seo-benefit-card h3 {
     font-size: 1.5rem;
-    color: #007bff;
+    color: #0073aa;
 }
 
 /* Services Offered Section */
@@ -101,7 +108,7 @@
 
 .seo-services-offered h2 {
     font-size: 2rem;
-    color: #007bff;
+    color: #0073aa;
 }
 
 .seo-services-list {
@@ -117,7 +124,7 @@
 
 .list_serv {
     padding: 25px;
-    background: #007bff;
+    background: #0073aa;
     color: #fff;
     border-radius: 8px;
     margin: 10px 0; /* Added margin for better spacing */
@@ -133,7 +140,7 @@
 
 /* Call to Action Section */
 .seo-contact {
-    background-color: #007bff;
+    background-color: #0073aa;
     padding: 30px 20px;
     color: white;
     border-radius: 10px;
@@ -148,7 +155,7 @@
 .seo-contact-btn {
     padding: 12px 25px;
     background-color: #ffffff;
-    color: #007bff;
+    color: #0073aa;
     border: none;
     border-radius: 5px;
     font-size: 1.2rem;
@@ -209,5 +216,428 @@
 
     .list_serv p {
         font-size: 0.9rem; /* Smaller font for description on mobile */
+    }
+}
+
+
+/* Container */
+.seo-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f9fc;
+}
+
+/* Hero Section */
+.seo-hero {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.seo-hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(2px);
+}
+
+.seo-hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.seo-hero-text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.seo-hero-text p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Overview Section */
+.seo-overview {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.seo-overview h2 {
+    font-size: 2rem;
+    color: #0073aa;
+}
+
+.seo-overview p {
+    font-size: 1rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Benefits Section */
+.seo-benefits {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.seo-benefits h2 {
+    font-size: 2rem;
+    color: #0073aa;
+    margin-bottom: 15px;
+}
+
+.seo-benefit-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.seo-benefit-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.seo-benefit-card h3 {
+    font-size: 1.5rem;
+    color: #0073aa;
+}
+
+/* Our Services Section */
+.seo-services-section {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.seo-services-section h2 {
+    font-size: 2rem;
+    color: #0073aa;
+}
+
+.seo-services-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.seo-service-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.seo-service-card h3 {
+    font-size: 1.5rem;
+    color: #0073aa;
+}
+
+/* Services Offered Section */
+.seo-services-offered {
+    margin: 40px 0;
+}
+
+.seo-services-offered h2 {
+    font-size: 2rem;
+    color: #0073aa;
+    text-align: center;
+}
+
+.seo-services-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list_serv {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.seoHead {
+    font-size: 1.5rem;
+    color: #0073aa;
+}
+
+/* FAQ Section */
+.seo-faq {
+    margin: 40px 0;
+}
+
+.seo-faq h2 {
+    font-size: 2rem;
+    color: #0073aa;
+    text-align: center;
+}
+
+.faq-items {
+    margin-top: 20px;
+}
+
+.faq-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+/* Call to Action Section */
+.seo-contact {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.seo-contact h3 {
+    font-size: 1.8rem;
+}
+
+.seo-contact-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.seo-contact-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries */
+@media (max-width: 480px) {
+    .seo-hero-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .seo-hero-text p {
+        font-size: 1rem;
+    }
+
+    .seo-benefit-card, .seo-service-card {
+        width: 100%;
+    }
+
+    .seo-services-list {
+        padding: 0 10px;
+    }
+
+    .list_serv {
+        padding: 10px;
+    }
+    .seo-hero{
+        height: 200px;
+        width: 100%;
+    }
+}
+
+
+
+/* Container */
+.seo-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f9fc;
+}
+
+/* Hero Section */
+.seo-hero {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.seo-hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(2px);
+}
+
+.seo-hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.seo-hero-text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.seo-hero-text p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Overview Section */
+.seo-overview {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.seo-overview h2 {
+    font-size: 2rem;
+    color: #0073aa;
+    margin-bottom: 10px;
+}
+
+.seo-overview p {
+    font-size: 1rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Our Services Section */
+.seo-services-section {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.seo-services-section h2 {
+    font-size: 2rem;
+    color: #0073aa;
+}
+
+.seo-services-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.seo-service-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.seo-service-card h3 {
+    font-size: 1.5rem;
+    color: #0073aa;
+}
+
+/* Why Choose Us Section */
+.seo-why-choose-us {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.seo-why-choose-us h2 {
+    font-size: 2rem;
+    color: #0073aa;
+}
+
+.why-choose-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.why-choose-list li {
+    margin: 10px 0;
+}
+
+/* FAQ Section */
+.seo-faq {
+    margin: 40px 0;
+}
+
+.seo-faq h2 {
+    font-size: 2rem;
+    color: #0073aa;
+    text-align: center;
+}
+
+.faq-items {
+    margin-top: 20px;
+}
+
+.faq-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+/* Call to Action Section */
+.seo-contact {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.seo-contact h3 {
+    font-size: 1.8rem;
+}
+
+.seo-contact-btn {
+    background-color: #0073aa;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.seo-contact-btn:hover {
+    background-color: #007bff;
+}
+.seo-contact-btn {
+    background: #fff;
+    color: #555;
+  }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .seo-hero-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .seo-hero-text p {
+        font-size: 1rem;
+    }
+
+    .seo-service-card {
+        width: 90%;
+        margin: 0 auto;
     }
 }

@@ -25,62 +25,61 @@ const SEOService = () => {
         </p>
       </section>
 
-      {/* Benefits Section */}
-      <section className="seo-benefits">
-        <h2>Benefits of Our SEO Services</h2>
-        <div className="seo-benefit-cards">
-          <div className="seo-benefit-card">
-            <h3>Increased Traffic</h3>
-            <p>Our SEO strategies lead to higher organic search traffic and visibility.</p>
+      {/* Our Services Section */}
+      <section className="seo-services-section">
+        <h2>Our Services</h2>
+        <div className="seo-services-cards">
+          <div className="seo-service-card">
+            <h3>Keyword Research</h3>
+            <p>Identifying relevant keywords that your target audience is searching for.</p>
           </div>
-          <div className="seo-benefit-card">
-            <h3>Improved User Experience</h3>
-            <p>We optimize your website structure and content for better user engagement.</p>
+          <div className="seo-service-card">
+            <h3>On-Page SEO</h3>
+            <p>Optimizing individual web pages to rank higher and earn more relevant traffic.</p>
           </div>
-          <div className="seo-benefit-card">
-            <h3>Better ROI</h3>
-            <p>SEO provides one of the best returns on investment compared to other marketing strategies.</p>
+          <div className="seo-service-card">
+            <h3>Off-Page SEO</h3>
+            <p>Building high-quality backlinks to improve your site's authority and ranking.</p>
           </div>
-          <div className="seo-benefit-card">
-            <h3>Brand Credibility</h3>
-            <p>Higher rankings increase your brand’s credibility and trustworthiness.</p>
+          <div className="seo-service-card">
+            <h3>Technical SEO</h3>
+            <p>Assessing your website's technical aspects to improve its performance and indexability.</p>
           </div>
         </div>
       </section>
 
-      {/* Services Offered Section */}
-      <section className="seo-services-offered">
-        <h2>Our SEO Services</h2>
-        <ul className="seo-services-list">
-          <li className="list_serv">
-            <strong>Keyword Research and Analysis</strong>
-            <p>Identifying relevant keywords that your target audience is searching for.</p>
-          </li>
-          <li className="list_serv">
-            <strong>On-Page Optimization</strong>
-            <p>Optimizing individual web pages to rank higher and earn more relevant traffic.</p>
-          </li>
-          <li className="list_serv">
-            <strong>Off-Page SEO (Link Building)</strong>
-            <p>Building high-quality backlinks to improve your site's authority and ranking.</p>
-          </li>
-          <li className="list_serv">
-            <strong>Technical SEO Audits</strong>
-            <p>Assessing your website's technical aspects to improve its performance and indexability.</p>
-          </li>
-          <li className="list_serv">
-            <strong>Content Strategy Development</strong>
-            <p>Creating a plan to produce valuable and relevant content to attract your audience.</p>
-          </li>
-          <li className="list_serv">
-            <strong>Local SEO Services</strong>
-            <p>Optimizing your online presence to attract more business from relevant local searches.</p>
-          </li>
-          <li className="list_serv">
-            <strong className="seoHead">SEO Reporting and Analytics</strong>
-            <p>Providing insights and analysis to track your SEO performance and adjust strategies.</p>
-          </li>
+      {/* Why Choose Us Section */}
+      <section className="seo-why-choose-us">
+        <h2>Why Choose Us?</h2>
+        <ul className="why-choose-list">
+          <li>Proven Results: We have a track record of delivering measurable results that elevate your business.</li>
+          <li>Customized Strategies: Our team tailors SEO strategies to fit your unique business needs and goals.</li>
+          <li>Expert Team: Our SEO specialists are experienced professionals with a passion for digital marketing.</li>
+          <li>Transparent Reporting: We provide regular updates and detailed reports so you can see our progress.</li>
         </ul>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="seo-faq">
+        <h2>Frequently Asked Questions</h2>
+        <div className="faq-items">
+          <div className="faq-item">
+            <strong>What is SEO?</strong>
+            <p>SEO stands for Search Engine Optimization. It is the practice of optimizing your website to rank higher in search engine results.</p>
+          </div>
+          <div className="faq-item">
+            <strong>How long does it take to see results from SEO?</strong>
+            <p>SEO is a long-term strategy. Typically, you can start seeing results within 3-6 months, but it can take longer for competitive keywords.</p>
+          </div>
+          <div className="faq-item">
+            <strong>Do I need to pay for SEO?</strong>
+            <p>While there are costs associated with hiring SEO services, there are also many free techniques you can implement yourself.</p>
+          </div>
+          <div className="faq-item">
+            <strong>Can I do SEO myself?</strong>
+            <p>Yes! Many small business owners do their own SEO, but it can be time-consuming and may require specialized knowledge.</p>
+          </div>
+        </div>
       </section>
 
       {/* Call to Action Section */}

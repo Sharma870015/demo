@@ -25,7 +25,7 @@ const DropdownMenu = () => {
             {/* Call scrollToTop on Home click */}
             <li><Link to="/" onClick={scrollToTop}>Home</Link></li>
             <li><Link to="/about">About</Link></li>
-            <li><a href='/Services'>Services +</a>
+            <li><a href='#'>Services +</a>
               <ul>
                 <li><a href='/mobileApp-development'>Mobile App Development +</a>
                   <ul>

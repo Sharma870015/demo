@@ -21,6 +21,42 @@ const AndroidAppDevelopment = () => {
         <p className='just_descr'>
           We offer professional Android app development services, tailored to meet your business needs. Our team of expert developers ensures that your app is scalable, user-friendly, and equipped with the latest technology.
         </p>
+         {/* Card Section for Android Services */}
+         <section className="services-card-section">
+          <h2 className="section-title">Android Development Services</h2>
+          <div className="cards-container">
+            <div className="card">
+              <h3 className="card-title">Custom Android App Development</h3>
+              <p className="card-desc">
+                Get tailored Android app solutions specifically designed to meet your business requirements, ensuring both quality and scalability.
+              </p>
+            </div>
+            <div className="card">
+              <h3 className="card-title">Android Game Development</h3>
+              <p className="card-desc">
+                We create engaging, performance-optimized Android games, from casual to complex, using advanced tools and frameworks.
+              </p>
+            </div>
+            <div className="card">
+              <h3 className="card-title">App Redesign & Optimization</h3>
+              <p className="card-desc">
+                Upgrade your existing app with a modern design, improved performance, and optimized user experience.
+              </p>
+            </div>
+            <div className="card">
+              <h3 className="card-title">App Testing & Quality Assurance</h3>
+              <p className="card-desc">
+                Ensure your Android app is bug-free, secure, and performs smoothly across various devices with our QA services.
+              </p>
+            </div>
+            <div className="card">
+              <h3 className="card-title">Wearables, Tablets, and TV Apps</h3>
+              <p className="card-desc">
+                We develop Android apps compatible with wearables, tablets, and Android TVs, expanding your reach across devices.
+              </p>
+            </div>
+          </div>
+        </section>
 
         {/* Expertise section */}
         <section className="exper-section">
@@ -49,38 +85,7 @@ const AndroidAppDevelopment = () => {
             <li>App deployment and launch on Google Play Store</li>
           </ul>
         </section>
-
-        {/* Technologies we use */}
-        <section className="technologie-section">
-          <h2 className='tech_uses'>Technologies We Use</h2>
-          <p className='tech_use_descr'>We ensure that we use the latest and most powerful technologies for Android app development, including:</p>
-          <ul className='tech_uses'>
-            <li>Kotlin, Java</li>
-            <li>Android Studio, IntelliJ</li>
-            <li>Firebase, SQLite</li>
-            <li>Google Play Services, Google Maps API</li>
-            <li>ARCore, ML Kit for AI/ML integration</li>
-            <li>Jetpack Compose for modern UI development</li>
-            <li>REST APIs, GraphQL for backend integration</li>
-          </ul>
-        </section>
-
-        {/* Testimonials */}
-        <section className="testimonial-section">
-          <h2 className='testi_another'>What Our Clients Say</h2>
-          <blockquote className='quote'>
-            <p className='another_descr'>
-              "The team delivered a fantastic Android app that met all our expectations. The design, functionality, and overall user experience were exceptional. We highly recommend their services!"
-            </p>
-            <footer className='Clie_name'>- Client A</footer>
-          </blockquote>
-          <blockquote className='another-quote'>
-            <p className='Quote_descr'>
-              "Expert developers with a keen eye for detail. The app was smooth, responsive, and perfect for our business. Looking forward to working with them again!"
-            </p>
-            <footer className='Clie_name'>- Client B</footer>
-          </blockquote>
-        </section>
+        
 
         {/* Contact and CTA */}
         <section className="section">

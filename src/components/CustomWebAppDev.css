@@ -11,13 +11,13 @@
 /* Image with Overlay Text */
 .custom-image-container {
     position: relative;
-    height: auto; /* Change height to auto for better responsiveness */
+    height: 400px; /* Change height to auto for better responsiveness */
     width: 100%;
 }
 
 .custom-hero-image {
     width: 100%;
-    height: auto; /* Change height to auto */
+    height: 100%; /* Change height to auto */
     object-fit: cover;
     filter: brightness(0.5);
 }
@@ -45,7 +45,7 @@
 /* Section Heading */
 .custom-heading {
     font-size: 2.5rem;
-    color: #007bff;
+    color: #0073aa;
     margin: 20px 0;
 }
 
@@ -65,11 +65,11 @@
 
 .custom-choose-us h2 {
     font-size: 2rem;
-    color: #007bff;
+    color: #0073aa;
     margin-bottom: 15px;
 }
 .Heading_desc {
-    color: #007bff;
+    color: #0073aa;
     margin-bottom: 25px;
   }
 
@@ -173,5 +173,120 @@
     .custom-contact-btn {
         padding: 10px 20px;
         font-size: 1rem;
+    }
+    .custom-image-container{
+        height: 200px;
+    }
+}
+
+
+
+
+/* Common Styling */
+.custom-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f9fc;
+}
+
+/* Image with Overlay Text */
+.custom-image-container {
+    position: relative;
+    height: 400px;
+    width: 100%;
+}
+
+.custom-hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+
+.custom-overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+/* Our Services Section */
+.custom-services {
+    margin: 40px 0;
+}
+
+.custom-service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.custom-service-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-service-card h3 {
+    font-size: 1.2rem;
+    margin: 15px 0;
+}
+
+/* FAQ Section */
+.custom-faq {
+    margin: 40px 0;
+}
+
+.faq-items {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.faq-item {
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.faq-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .custom-service-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .custom-image-container {
+        height: 200px;
+    }
+
+    .custom-overlay-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .custom-service-card,
+    .custom-tech-card {
+        width: 100%;
+    }
+
+    .faq-item {
+        padding: 15px;
     }
 }

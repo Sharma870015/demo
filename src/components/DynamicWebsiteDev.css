@@ -8,47 +8,165 @@
     background-color: #f0f8ff;
   }
   
-  /* Image with Overlay Text */
-  .dynamic-image-container {
-    position: relative;
-    height: auto; /* Change from fixed height to auto */
-    width: 100%;
-    overflow: hidden; /* Prevent overflow of the image */
-  }
-  
+/* Image with Overlay Text */
+.dynamic-image-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.dynamic-hero-image {
+  width: 100%;
+  object-fit: cover;
+  filter: blur(3px);
+}
+
+
+
+/* Desktop and Laptop - 400px height */
+@media (min-width: 769px) {
   .dynamic-hero-image {
-    width: 100%;
-    height: auto; /* Change from fixed height to auto */
-    object-fit: cover;
-    filter: blur(3px);
+    height: 400px;
   }
-  
+
   .dynamic-overlay-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 50%; /* Center vertically */
     transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
   }
-  
+}
+
+/* Mobile - 200px height */
+@media (max-width: 768px) {
+  .dynamic-hero-image {
+    height: 200px;
+  }
+
+  .dynamic-overlay-text {
+    top: 40%; /* Adjust alignment for mobile */
+    transform: translate(-50%, -40%);
+  }
+}
+
+.dynamic-overlay-text {
+  position: absolute;
+  left: 50%;
+  text-align: center;
+  color: white;
+}
+.dynamic-hero-image {
+  margin-bottom: 25px;
+}
+.dynamic-heading {
+  margin-bottom: 15px;
+  color: #0073aa;
+}
+.color-he {
+  color: #0073aa;
+  margin-bottom: 15px;
+}
+
+.dynamic-overlay-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.dynamic-overlay-text p {
+  font-size: 1.2rem;
+}
+
+
+/* Our Services Section */
+.dynamic-services {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.dynamic-service-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.dynamic-service-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dynamic-service-card h3 {
+  color: #0073aa;
+  margin-bottom: 10px;
+}
+
+.dynamic-icon {
+  font-size: 2rem;
+  color: #0073aa;
+}
+
+/* FAQ Section */
+.dynamic-faq {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.dynamic-faq-items {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.dynamic-faq-item {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  margin: 15px 0;
+  padding: 20px;
+  text-align: left;
+}
+
+.dynamic-faq-item h3 {
+  color: #0073aa;
+  margin-bottom: 10px;
+}
+
+.dynamic-faq-item p {
+  color: #555;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .dynamic-service-card,
+  .dynamic-faq-item {
+    width: 100%;
+  }
+
+  .dynamic-service-card {
+    width: calc(50% - 20px); /* Two per row on tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .dynamic-service-card,
+  .dynamic-faq-item {
+    width: 100%; /* One per row on small screens */
+  }
+}
+
+
+/* Responsive Text for Smaller Screens */
+@media (max-width: 480px) {
   .dynamic-overlay-text h1 {
-    font-size: 3rem;
-    font-weight: bold;
+    font-size: 1.6rem;
   }
-  
-  .dynamic-heading {
-    font-size: 2.5rem;
-    color: #1a1a1a;
-    margin: 20px 0;
+
+  .dynamic-overlay-text p {
+    font-size: 0.8rem;
   }
-  
-  .dynamic-description {
-    font-size: 1.2rem;
-    color: #333;
-    margin-bottom: 40px;
-    padding: 0 20px;
-  }
+}
+
   
   /* Why Choose Us Section */
   .dynamic-choose-us {

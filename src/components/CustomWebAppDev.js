@@ -35,6 +35,45 @@ const CustomWebAppDev = () => {
         our services to meet your specific requirements.
       </p>
 
+      {/* Our Services Section */}
+      <section className="custom-services">
+        <h2 className="Heading_desc">Our Services</h2>
+        <div className="custom-service-cards">
+          <div className="custom-service-card">
+            <i className="fas fa-code custom-icon"></i>
+            <h3>Custom Development</h3>
+            <p>
+              We build web apps from scratch tailored to your unique business
+              requirements.
+            </p>
+          </div>
+          <div className="custom-service-card">
+            <i className="fas fa-cogs custom-icon"></i>
+            <h3>API Integration</h3>
+            <p>
+              Seamlessly integrate third-party APIs into your web app to extend
+              its capabilities.
+            </p>
+          </div>
+          <div className="custom-service-card">
+            <i className="fas fa-users custom-icon"></i>
+            <h3>User Experience Design</h3>
+            <p>
+              We design user-friendly interfaces that make navigating your web
+              app a breeze.
+            </p>
+          </div>
+          <div className="custom-service-card">
+            <i className="fas fa-laptop custom-icon"></i>
+            <h3>Responsive Design</h3>
+            <p>
+              All our web apps are fully responsive, offering a seamless
+              experience across all devices.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Why Choose Us Section */}
       <section className="custom-choose-us">
         <h2 className="Heading_desc">Why Work With Us?</h2>
@@ -73,6 +112,38 @@ const CustomWebAppDev = () => {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <section className="custom-faq">
+        <h2 className="Heading_desc">Frequently Asked Questions</h2>
+        <div className="faq-items">
+          <div className="faq-item">
+            <h3>What is custom web app development?</h3>
+            <p>
+              Custom web app development involves creating web applications that
+              are specifically designed to meet your business’s unique needs and
+              requirements.
+            </p>
+          </div>
+          <div className="faq-item">
+            <h3>How long does it take to build a custom web app?</h3>
+            <p>
+              The time required to build a custom web app varies depending on
+              the complexity and scope of the project. We provide detailed
+              timelines after understanding your specific requirements.
+            </p>
+          </div>
+          <div className="faq-item">
+            <h3>Can you integrate third-party services into my web app?</h3>
+            <p>
+              Absolutely! We specialize in integrating third-party services like
+              payment gateways, social media, and other APIs to enhance your app.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      
 
       {/* Contact Section */}
       <div className="custom-contact">

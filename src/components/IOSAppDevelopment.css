@@ -16,7 +16,7 @@ body {
   /* Top Section with Banner */
   .top-section {
     width: 100%;
-    height: 800px;
+    height: 400px;
     overflow: hidden;
   }
   
@@ -261,6 +261,94 @@ body {
 
   .card-inner {
     height: 150px; /* Adjust height for mobile */
+  }
+}
+
+
+/* Why Choose Us Section */
+.why-choose-us-list {
+  list-style-type: disc; /* Use bullet points */
+  padding-left: 20px; /* Indent the list */
+  text-align: left; /* Align text to the left */
+  margin-bottom: 30px; /* Add some space below the list */
+}
+
+.why-choose-us-list li {
+  position: relative; /* For pseudo-element */
+  padding-left: 1.5em; /* Space between bullet and text */
+  margin-bottom: 10px; /* Space between list items */
+}
+
+.why-choose-us-list li::before {
+  content: '✓'; /* Use a checkmark as bullet */
+  position: absolute; /* Position bullet */
+  left: 0; /* Align bullet */
+  color: #007aff; /* Blue color for checkmark */
+  font-weight: bold; /* Make checkmark bold */
+}
+
+/* FAQ Section */
+.faq-section {
+  margin-top: 40px;
+  background-color: #f0f4ff; /* Light blue background */
+  padding: 20px; /* Add padding */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.faq-item {
+  margin-bottom: 20px; /* Space between FAQs */
+  padding: 15px; /* Add padding */
+  border-bottom: 1px solid #ccc; /* Divider */
+}
+
+.faq-item:last-child {
+  border-bottom: none; /* Remove border for last item */
+}
+
+.faq-question {
+  font-weight: bold; /* Bold questions */
+  color: #004080; /* Blue color for questions */
+  font-size: 1.1rem; /* Slightly larger font */
+  cursor: pointer; /* Pointer on hover */
+  transition: color 0.3s; /* Transition effect */
+}
+
+.faq-question:hover {
+  color: #005bb5; /* Darker blue on hover */
+}
+
+.faq-answer {
+  margin-top: 5px; /* Space above answers */
+  color: #666; /* Gray color for answers */
+  font-size: 0.95rem; /* Smaller answer font size */
+  line-height: 1.5; /* Improved readability */
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .ios-heading {
+    font-size: 1.8rem; /* Smaller heading */
+  }
+
+  .ios-description {
+    font-size: 0.9rem; /* Smaller description */
+  }
+
+  .why-choose-us-list {
+    font-size: 0.9rem; /* Smaller font size for list items */
+  }
+
+  .faq-question {
+    font-size: 1rem; /* Smaller FAQ question size */
+  }
+
+  .faq-answer {
+    font-size: 0.9rem; /* Smaller FAQ answer size */
+  }
+
+  .faq-item {
+    padding: 10px; /* Reduce padding for mobile */
   }
 }
 

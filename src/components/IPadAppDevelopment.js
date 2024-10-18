@@ -1,124 +1,86 @@
 import React from 'react';
 import './IPadAppDevelopment.css';
+import { Link } from 'react-router-dom';
+import ipad from './iPad App Development 1980 X 850.jpg'; // Replace with your iPad image
 
 const IPadAppDevelopment = () => {
-  const steps = [
-    { title: 'Step 1', description: 'Design an intuitive and user-friendly interface for iPad devices.' },
-    { title: 'Step 2', description: 'Develop responsive and dynamic features optimized for the iPad.' },
-    { title: 'Step 3', description: 'Test across various iPad devices for consistent performance.' },
-    { title: 'Step 4', description: 'Deploy the application and ensure it meets Apple’s guidelines.' },
-    { title: 'Step 5', description: 'Continuously update and maintain the application for future iPadOS versions.' },
-    { title: 'Step 6', description: 'Optimize the app for better performance and scalability.' },
-    { title: 'Step 7', description: 'Enhance security measures and ensure data protection compliance.' },
-    { title: 'Step 8', description: 'Integrate user feedback and provide regular updates.' },
-  ];
-
-  const benefits = [
-    { title: 'Creative UI/UX', description: 'Custom, user-centric designs tailored specifically for iPad users.' },
-    { title: 'Optimized Performance', description: 'Smooth and seamless performance on all iPad models.' },
-    { title: 'Scalable Solutions', description: 'Apps that are built to grow with your business.' },
-    { title: 'Dedicated Support', description: 'Comprehensive support and maintenance for your app.' },
-    { title: 'Future-Proof Technology', description: 'Leverage cutting-edge technologies that ensure your app is built for the future.' },
-    { title: 'Security & Compliance', description: 'Top-notch security features to protect your data and ensure compliance with industry standards.' },
-  ];
-
-  const technologies = [
-    'Swift',
-    'Objective-C',
-    'Xcode',
-    'iOS SDK',
-    'Firebase',
-    'CoreData',
-    'In-app Purchases',
-    'Augmented Reality (ARKit)',
-  ];
-
-  const caseStudies = [
-    { title: 'Fitness Pro App', description: 'Helped a fitness company create an intuitive app for iPad to streamline virtual training sessions.' },
-    { title: 'eCommerce Platform', description: 'Developed a scalable eCommerce app that enhanced the online shopping experience for iPad users.' },
-    { title: 'Educational App', description: 'Built an interactive e-learning platform tailored for iPad, optimizing user engagement with touch gestures.' },
-  ];
-
-  const testimonials = [
-    { name: 'John Doe', feedback: 'The iPad app developed by this team was game-changing for our business! Highly recommend their services.' },
-    { name: 'Jane Smith', feedback: 'Excellent design and execution. The app works flawlessly on all iPad models. Great support!' },
-  ];
-
   return (
-    <section className="ipad-app-development">
-      <div className="content-wrapper">
-        <h1 className="title">iPad App Development</h1>
-        <p className="intro-text">Innovative, creative, and fully responsive iPad App solutions.</p>
-
-        {/* Procedure Section */}
-        <div className="procedure-section">
-          <h2 className="section-title">Development Process</h2>
-          <div className="procedure-cards">
-            {steps.map((step, index) => (
-              <div key={index} className="procedure-card">
-                <div className="card-inner">
-                  <div className="card-front">
-                    <div className="step-number">{step.title}</div>
-                  </div>
-                  <div className="card-back">
-                    <div className="step-description">{step.description}</div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Benefits Section */}
-        <div className="benefits-section">
-          <h2 className="section-title">Why Choose Us?</h2>
-          <div className="benefit-cards">
-            {benefits.map((benefit, index) => (
-              <div key={index} className="benefit-card">
-                <h3>{benefit.title}</h3>
-                <p>{benefit.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Technologies Section */}
-        <div className="technologies-section">
-          <h2 className="section-title">Technologies We Use</h2>
-          <ul className="technologies-list">
-            {technologies.map((tech, index) => (
-              <li key={index}>{tech}</li>
-            ))}
-          </ul>
-        </div>
-
-        {/* Case Studies Section */}
-        <div className="case-studies-section">
-          <h2 className="section-title">Case Studies</h2>
-          <div className="case-studies-cards">
-            {caseStudies.map((caseStudy, index) => (
-              <div key={index} className="case-study-card">
-                <h3>{caseStudy.title}</h3>
-                <p>{caseStudy.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Testimonials Section */}
-        <div className="testimonials-section">
-          <h2 className="section-title">Testimonials</h2>
-          <div className="testimonials-cards">
-            {testimonials.map((testimonial, index) => (
-              <div key={index} className="testimonial-card">
-                <p>"{testimonial.feedback}"</p>
-                <h4>- {testimonial.name}</h4>
-              </div>
-            ))}
-          </div>
-        </div>
+    <div className="ipad-app">
+      {/* Top section with image */}
+      <div className="first-section">
+        <img
+          src={ipad} // Replace with your image URL
+          alt="iPad App Development"
+          className="first-image"
+        />
       </div>
-    </section>
+
+      {/* Main content */}
+      <div className="content">
+        <h1 className='IPad_head'>iPad App Development</h1>
+        <p className='just_descr'>
+          We specialize in delivering cutting-edge iPad app development services. Our team creates apps that leverage the full potential of the iPad, offering innovative and user-friendly solutions.
+        </p>
+
+        {/* Card Section for iPad Services */}
+        <section className="services-card-section">
+          <h2 className="section-title">iPad Development Services</h2>
+          <div className="cards-container">
+            <div className="card">
+              <h3 className="card-title">Custom iPad App Development</h3>
+              <p className="card-desc">
+                Tailored solutions for your business needs, ensuring seamless performance across all iPad devices.
+              </p>
+            </div>
+            <div className="card">
+              <h3 className="card-title">iPad Game Development</h3>
+              <p className="card-desc">
+                Create highly engaging and performance-optimized games for the iPad using modern tools and frameworks.
+              </p>
+            </div>
+            <div className="card">
+              <h3 className="card-title">App Redesign & Optimization</h3>
+              <p className="card-desc">
+                Upgrade your app with an enhanced design and improved user experience specifically for the iPad.
+              </p>
+            </div>
+            <div className="card">
+              <h3 className="card-title">App Testing & Quality Assurance</h3>
+              <p className="card-desc">
+                Ensure your iPad app is free of bugs, secure, and performs well across various iPad versions and sizes.
+              </p>
+            </div>
+            <div className="card">
+              <h3 className="card-title">Enterprise iPad Solutions</h3>
+              <p className="card-desc">
+                Build enterprise-grade applications to enhance productivity and streamline business operations on iPads.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Expertise section */}
+        <section className="exper-section">
+          <h2 className='why_us'>Why Choose Us?</h2>
+          <ul className='choose_detail'>
+            <li>Experienced iPad developers with industry knowledge.</li>
+            <li>Custom app solutions tailored for your business.</li>
+            <li>High-quality UI/UX design that maximizes the iPad experience.</li>
+            <li>Use of the latest iOS frameworks like Swift, Xcode, and more.</li>
+            <li>Rigorous testing to ensure compatibility across all iPad versions.</li>
+            <li>Post-launch support and updates to keep your app up-to-date.</li>
+          </ul>
+        </section>
+        {/* Contact and CTA */}
+        <section className="section">
+          <h2 className='Redirect'>Start Building Your iPad App Today!</h2>
+          <p className='redir_descr'>
+            Contact us to discuss your iPad app development needs. We're here to turn your ideas into reality with our expert iPad development services.
+          </p>
+          <Link to="/contact" className="cta-button">Contact Us</Link>
+        </section>
+      </div>
+    </div>
   );
 };
 

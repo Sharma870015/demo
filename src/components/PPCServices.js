@@ -7,11 +7,7 @@ const PPCServices = () => {
     <div className="ppc-services-container">
       {/* Hero Section */}
       <div className="ppc-hero">
-        <img
-          src={PPCImage}
-          alt="PPC Services"
-          className="ppc-hero-image"
-        />
+        <img src={PPCImage} alt="PPC Services" className="ppc-hero-image" />
         <div className="ppc-hero-text">
           <h1>Maximize Your ROI with Our PPC Services</h1>
           <p>
@@ -31,7 +27,7 @@ const PPCServices = () => {
 
       {/* Benefits Section */}
       <section className="ppc-benefits">
-        <h2>Benefits of Our PPC Services</h2>
+        <h2>Our Services</h2>
         <div className="ppc-benefit-cards">
           <div className="ppc-benefit-card">
             <h3>Targeted Campaigns</h3>
@@ -52,47 +48,32 @@ const PPCServices = () => {
         </div>
       </section>
 
-      {/* Services Offered Section */}
-      <section className="ppc-services-offered">
-        <h2>Our PPC Services</h2>
-        <ul className="ppc-services-list">
-          <li className="list_serv">
-            <strong>Keyword Research</strong>
-            <p>Identify high-performing keywords to drive relevant traffic.</p>
-          </li>
-          <li className="list_serv">
-            <strong>Ad Creation</strong>
-            <p>Create compelling ad copy and visuals to attract clicks.</p>
-          </li>
-          <li className="list_serv">
-            <strong>Landing Page Optimization</strong>
-            <p>Enhance landing pages for better conversion rates.</p>
-          </li>
-          <li className="list_serv">
-            <strong>A/B Testing</strong>
-            <p>Test different ads to find the most effective versions.</p>
-          </li>
-          <li className="list_serv">
-            <strong>Remarketing Campaigns</strong>
-            <p>Re-engage visitors who didn’t convert the first time.</p>
-          </li>
-          <li className="list_serv">
-            <strong>Performance Reporting</strong>
-            <p>Receive comprehensive reports on campaign performance.</p>
-          </li>
+      {/* Why Choose Us Section */}
+      <section className="ppc-choose-us">
+        <h2>Why Choose Us?</h2>
+        <ul className="choose-us-list">
+          <li className="padding">🚀 Experienced Team with Proven Results</li>
+          <li className="padding">🎯 Customized Strategies Tailored to Your Needs</li>
+          <li className="padding">📊 Transparent Reporting and Analytics</li>
+          <li className="padding">🤝 24/7 Customer Support</li>
+          <li className="padding">💰 Competitive Pricing Packages</li>
         </ul>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="ppc-testimonials">
-        <h2>What Our Clients Say</h2>
-        <div className="testimonial-card">
-          <p>"The PPC campaigns boosted our sales significantly! A game-changer for our business."</p>
-          <strong>- Emily R.</strong>
+      {/* FAQ Section */}
+      <section className="ppc-faq">
+        <h2>Frequently Asked Questions</h2>
+        <div className="faq-item">
+          <h3>What is PPC advertising?</h3>
+          <p>PPC advertising is a model where advertisers pay each time a user clicks on their ad. It’s an effective way to gain visibility quickly.</p>
         </div>
-        <div className="testimonial-card">
-          <p>"Professional and results-driven. Highly satisfied with the service!"</p>
-          <strong>- Mark T.</strong>
+        <div className="faq-item">
+          <h3>How quickly can I see results?</h3>
+          <p>Many clients see results almost immediately after launching their campaigns, with increased traffic and conversions.</p>
+        </div>
+        <div className="faq-item">
+          <h3>Can you manage my PPC campaigns?</h3>
+          <p>Yes, we provide full management services for PPC campaigns, from setup to ongoing optimization.</p>
         </div>
       </section>
 

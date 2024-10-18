@@ -1,216 +1,279 @@
 /* General Styles */
 .affiliate-page {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-  }
-  
-  /* Hero Section */
-  .affiliate-hero {
-    position: relative;
-    height: 400px;
-    overflow: hidden;
-    background: #222;
-  }
-  
-  .affiliate-hero-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: blur(3px);
-  }
-  
-  .affiliate-hero-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-  }
-  
-  .affiliate-hero-overlay h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    animation: fadeInDown 1s ease-in-out;
-  }
-  
-  .affiliate-hero-overlay p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    animation: fadeInUp 1s ease-in-out;
-  }
-  
-  .cta-button {
-    padding: 12px 20px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-weight: bolder;
-  }
-  
-  .cta-button:hover {
-    background-color: #218838;
-  }
-  
-  /* Services Section */
-  .affiliate-services {
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #f9f9f9;
-  }
-  
-  .affiliate-services h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
-    animation: fadeInDown 1s ease;
-  }
-  
-  .services-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.affiliate-hero {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  background: #222;
+}
+
+.affiliate-hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(3px);
+}
+
+.affiliate-hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.affiliate-hero-overlay h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.affiliate-hero-overlay p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.cta-button {
+  padding: 12px 20px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bolder;
+}
+
+.cta-button:hover {
+  background-color: #68aef4;
+}
+
+.-button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bolder;
+}
+.-button:hover{
+  background-color: #88898a;
+  color: #ffffff;
+}
+
+/* Affiliate Services Section */
+.affiliate-services {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.affiliate-services h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  animation: fadeInDown 1s ease;
+  color: #0073aa;
+}
+
+.affiliate-services p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+/* Our Services Section */
+.services-section {
+  padding: 10px 20px;
+  text-align: center;
+  margin: 0;
+}
+
+.services-section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #0073aa;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.service-card {
+  width: 22rem;
+}
+.service-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  width: calc(22.33% - 30px); /* 3 cards per row with margins */
+  padding: 20px;
+  transition: transform 0.3s;
+}
+@media screen and (max-width: 480px) {
   .service-card {
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 15px;
-    width: 300px;
-    padding: 20px;
-    transition: transform 0.3s;
+      width: 90%; /* 1 card per row for mobile */
   }
-  
-  .service-card:hover {
-    transform: translateY(-10px);
-  }
-  
-  .service-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-  }
-  
-  .service-card h3 {
-    font-size: 1.5rem;
-    margin-top: 15px;
-  }
-  
-  .service-card p {
-    margin-top: 10px;
-  }
-  
-  /* Approach Section */
-  .affiliate-approach {
-    padding: 50px 20px;
-    background-color: #ffffff;
-    text-align: center;
-  }
-  
-  .affiliate-approach h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
-  }
-  
-  .approach-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .approach-step {
-    width: 300px;
-    margin: 15px;
-    text-align: left;
-  }
-  
-  .approach-step h4 {
-    font-size: 1.4rem;
-  }
-  
-  .approach-step p {
-    margin-top: 10px;
-  }
-  
-  /* Call to Action Section */
-  .affiliate-cta {
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #28a745;
-    color: white;
-  }
-  .-button {
-    padding: 15px;
-    color: #555;
-    font-weight: bolder;
-    border: none;
-    border-radius: 5px;
-  }
-  
-  .affiliate-cta h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  
-  .affiliate-cta p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-  }
-  
-  /* Animations */
-  @keyframes fadeInDown {
-    0% {
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  margin-top: 15px;
+  color: #0073aa;
+}
+
+.service-card p {
+  margin-top: 10px;
+}
+
+/* Why Choose Us Section */
+.affiliate-why-choose-us {
+  padding: 50px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.affiliate-why-choose-us h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #0073aa;
+}
+
+.affiliate-why-choose-us ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.affiliate-why-choose-us li {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+/* FAQ Section */
+.affiliate-faq {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.affiliate-faq h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #0073aa;
+}
+
+.faq-item {
+  margin: 15px 0;
+  text-align: left;
+  max-width: 800px;
+  margin: 15px auto;
+}
+
+.faq-item h3 {
+  font-size: 1.5rem;
+}
+
+.faq-item p {
+  margin-top: 5px;
+  font-size: 1rem;
+}
+
+/* Call to Action Section */
+.affiliate-cta {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #007bff;
+  color: white;
+}
+
+.affiliate-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.affiliate-cta p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  0% {
       opacity: 0;
       transform: translateY(-30px);
-    }
-    100% {
+  }
+  100% {
       opacity: 1;
       transform: translateY(0);
-    }
   }
-  
-  @keyframes fadeInUp {
-    0% {
+}
+
+@keyframes fadeInUp {
+  0% {
       opacity: 0;
       transform: translateY(30px);
-    }
-    100% {
+  }
+  100% {
       opacity: 1;
       transform: translateY(0);
-    }
   }
-  
-  /* Responsive Design */
-  @media screen and (max-width: 480px) {
-    .affiliate-hero-overlay h1 {
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+  .affiliate-hero-overlay h1 {
       font-size: 1.8rem;
-    }
-  
-    .affiliate-hero-overlay p {
+      max-width: 100%;
+      width: 260px;
+  }
+
+  .affiliate-hero-overlay p {
       font-size: 1rem;
-    }
-  
-    .cta-button {
+  }
+
+  .cta-button {
       padding: 10px 15px;
       font-size: 0.9rem;
-    }
-  
-    .service-card {
+  }
+
+  .service-card {
       width: 90%;
       margin: 10px 0;
-    }
-  
-    .approach-step {
-      width: 100%;
-    }
-  
-    .services-container, .approach-container {
+  }
+
+  .services-container, .approach-container {
       flex-direction: column;
       align-items: center;
-    }
   }
-  
+
+  .affiliate-why-choose-us, .affiliate-faq {
+      padding: 20px 10px;
+  }
+
+  .affiliate-why-choose-us h2,
+  .affiliate-faq h2 {
+      font-size: 1.5rem;
+  }
+
+  .affiliate-why-choose-us li,
+  .faq-item h3 {
+      font-size: 1rem;
+  }
+
+  .affiliate-why-choose-us ul,
+  .faq-item {
+      max-width: 100%;
+  }
+}

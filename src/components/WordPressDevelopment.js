@@ -14,7 +14,7 @@ const WordPressDevelopment = () => {
           className="wp-hero-image"
         />
         <div className="wp-overlay-text">
-          <h1> WordPress Website Dev</h1>
+          <h1 className="h_animate"> WordPress Website Dev</h1>
           <p className="descr_hea">
             Develop custom WordPress websites with unique themes, plugins, and
             optimized performance, ensuring secure, fast-loading, and
@@ -34,6 +34,45 @@ const WordPressDevelopment = () => {
         team is here to build the perfect WordPress solution for you.
       </p>
 
+      {/* WordPress Services Section */}
+      <section className="wp-services">
+        <h2 className="clr-bottom">Our WordPress Services</h2>
+        <div className="wp-service-cards">
+          <div className="wp-service-card">
+            <i className="fas fa-paint-brush wp-service-icon"></i>
+            <h3>Custom Design</h3>
+            <p>
+              We craft visually stunning, fully responsive, and custom-designed
+              WordPress websites tailored to your brand's aesthetics.
+            </p>
+          </div>
+          <div className="wp-service-card">
+            <i className="fas fa-code wp-service-icon"></i>
+            <h3>Theme Development</h3>
+            <p>
+              Get bespoke themes developed from scratch, or customize existing
+              themes to match your business needs.
+            </p>
+          </div>
+          <div className="wp-service-card">
+            <i className="fas fa-cogs wp-service-icon"></i>
+            <h3>Plugin Integration</h3>
+            <p>
+              Enhance your WordPress site's functionality with custom plugin
+              development and seamless integration.
+            </p>
+          </div>
+          <div className="wp-service-card">
+            <i className="fas fa-lock wp-service-icon"></i>
+            <h3>Security & Maintenance</h3>
+            <p>
+              Keep your website secure and up-to-date with our ongoing
+              maintenance and security services.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Why Choose Us Section */}
       <section className="wp-choose-us">
         <h2>Why Choose Us</h2>
@@ -42,8 +81,6 @@ const WordPressDevelopment = () => {
           high-quality, tailored solutions that meet your business needs. With
           years of experience and expertise, we ensure that every project is
           executed with precision, creativity, and a focus on user experience.
-          From responsive design to advanced functionality, we take care of
-          every detail to help you succeed online.
         </p>
       </section>
 
@@ -74,60 +111,12 @@ const WordPressDevelopment = () => {
         </div>
       </section>
 
-      {/* Expert Profiles Section */}
-      <section className="wp-experts">
-        <h2 className="color_h">Meet Our Experts</h2>
-        <div className="wp-expert-cards">
-          <div className="wp-expert-card">
-            <h3 className="name-color">Aakash Sharma</h3>
-            <p>Senior WordPress & Frontend Developer</p>
-            <p>With over 8 years of experience in WordPress development, Aakash specializes in custom themes and plugin development.</p>
-          </div>
-          <div className="wp-expert-card">
-            <h3 className="name-color">Kanika Sharma</h3>
-            <p>Frontend Developer & SEO</p>
-            <p>Kanika has a keen eye for design and user experience, ensuring that every site is not only functional but also beautiful.</p>
-          </div>
-          <div className="wp-expert-card">
-            <h3 className="name-color">Versha Sharma</h3>
-            <p>SEO Specialist</p>
-            <p>Versha optimizes websites to rank higher in search engines, driving traffic and enhancing online visibility.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* Section with Icons and Details */}
-      <div className="wp-features">
-        <div className="wp-feature-card">
-          <i className="fas fa-cogs wp-icon"></i>
-          <h2>Custom Themes</h2>
-          <p>
-            We develop custom themes from scratch or adapt existing templates to
-            match your brand's identity.
-          </p>
-        </div>
-        <div className="wp-feature-card">
-          <i className="fas fa-plug wp-icon"></i>
-          <h2>Custom Plugins</h2>
-          <p>
-            Our experts build tailor-made plugins to enhance the functionality
-            of your WordPress site.
-          </p>
-        </div>
-        <div className="wp-feature-card">
-          <i className="fas fa-shield-alt wp-icon"></i>
-          <h2>Security & Optimization</h2>
-          <p>
-            From malware protection to performance optimization, we ensure your
-            website is secure and lightning-fast.
-          </p>
-        </div>
-      </div>
-
       {/* Contact Section */}
       <div className="wp-contact">
         <h3>Ready to start your WordPress project?</h3>
-        <Link to="/contact" className="wp-contact-btn">Contact Us Today</Link>
+        <Link to="/contact" className="wp-contact-btn">
+          Contact Us Today
+        </Link>
       </div>
     </div>
   );

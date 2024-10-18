@@ -256,3 +256,100 @@
         width: 100%; /* Full width buttons on mobile */
     }
 }
+
+/* Existing styles... */
+
+/* Why Choose Us Section */
+.ppc-choose-us {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.ppc-choose-us h2 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.choose-us-list {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0;
+    font-size: 1.2rem;
+    color: #555;
+    display: inline-block;
+}
+
+/* FAQ Section */
+.ppc-faq {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.ppc-faq h2 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.faq-item {
+    margin: 20px 0;
+    text-align: left; /* Align FAQ text to the left */
+    padding: 15px;
+    background-color: #eee;
+    border-radius: 10px;
+}
+
+.faq-item h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+.faq-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .ppc-hero {
+        height: 300px; /* Adjust height for mobile */
+    }
+
+    .ppc-hero-text h1 {
+        font-size: 1.8rem; /* Smaller font size for mobile */
+        max-width: 100%;
+        width: 300px;
+    }
+
+    .ppc-hero-text p {
+        font-size: 1rem; /* Smaller font size for mobile */
+    }
+
+    .ppc-benefit-card {
+        width: 100%; /* Full width for mobile */
+        margin-bottom: 15px; /* Space between cards */
+    }
+
+    .ppc-contact-btn,
+    .ppc-cta-button {
+        width: 100%; /* Full width buttons on mobile */
+    }
+
+    /* Adjustments for the new sections */
+    .ppc-choose-us h2, .ppc-faq h2 {
+        font-size: 1.8rem; /* Adjust heading size for mobile */
+    }
+
+    .choose-us-list, .faq-item {
+        font-size: 1rem; /* Adjust list and FAQ font size */
+    }
+}
+
+
+.padding {
+    background: #eee;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+  }

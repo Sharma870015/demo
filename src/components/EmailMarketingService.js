@@ -31,7 +31,7 @@ const EmailMarketingService = () => {
 
       {/* Benefits Section */}
       <section className="email-benefits">
-        <h2>Benefits of Our Email Marketing Services</h2>
+        <h2>Our Services</h2>
         <div className="email-benefit-cards">
           <div className="email-benefit-card">
             <h3>Targeted Messaging</h3>
@@ -52,58 +52,33 @@ const EmailMarketingService = () => {
         </div>
       </section>
 
-      {/* Services Offered Section */}
-      <section className="email-services-offered">
-        <h2>Our Email Marketing Services</h2>
-        <ul className="email-services-list">
-          <li className="list_serv">
-            <strong>Email Campaign Management</strong>
-            <p>We handle everything from strategy to execution for your email campaigns.</p>
-          </li>
-          <li className="list_serv">
-            <strong>List Building and Segmentation</strong>
-            <p>Grow your email list and segment it for targeted campaigns.</p>
-          </li>
-          <li className="list_serv">
-            <strong>Design and Content Creation</strong>
-            <p>Create engaging emails with captivating designs and copy that resonates.</p>
-          </li>
-          <li className="list_serv">
-            <strong>A/B Testing</strong>
-            <p>Optimize your campaigns with A/B testing to determine what works best.</p>
-          </li>
-          <li className="list_serv">
-            <strong>Automation</strong>
-            <p>Set up automated email sequences to nurture leads and retain customers.</p>
-          </li>
-          <li className="list_serv">
-            <strong>Performance Reporting</strong>
-            <p>Receive detailed reports on your campaigns' performance metrics.</p>
-          </li>
+      {/* Why Choose Us Section */}
+      <section className="email-choose-us">
+        <h2>Why Choose Us?</h2>
+        <ul className="choose-us-list">
+          <li>🚀 Experienced Team with Proven Results</li>
+          <li>🎯 Customized Strategies Tailored to Your Needs</li>
+          <li>📊 Transparent Reporting and Analytics</li>
+          <li>🤝 24/7 Customer Support</li>
+          <li>💰 Competitive Pricing Packages</li>
         </ul>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="email-testimonials">
-        <h2>What Our Clients Say</h2>
-        <div className="testimonial-card">
-          <p>"Our email open rates have doubled since we started using these services! Highly recommended!"</p>
-          <strong>- Sarah J.</strong>
+      {/* FAQ Section */}
+      <section className="email-faq">
+        <h2>Frequently Asked Questions</h2>
+        <div className="faq-item">
+          <h3>What types of email marketing campaigns do you offer?</h3>
+          <p>We offer promotional emails, newsletters, event invitations, and automated drip campaigns.</p>
         </div>
-        <div className="testimonial-card">
-          <p>"The team helped us craft perfect emails that truly resonate with our audience."</p>
-          <strong>- John D.</strong>
+        <div className="faq-item">
+          <h3>How can I measure the success of my email campaigns?</h3>
+          <p>You can track open rates, click-through rates, and conversions through our detailed analytics reports.</p>
         </div>
-      </section>
-
-      {/* Email Signup Form Section */}
-      <section className="email-signup">
-        <h2 className="Subs">Subscribe to Our Newsletter</h2>
-        <p className="Stay-Tune">Stay updated with the latest news and tips in email marketing.</p>
-        <form className="signup-form">
-          <input type="email" placeholder="Your Email" required />
-          <button type="submit" className="signup-button">Subscribe</button>
-        </form>
+        <div className="faq-item">
+          <h3>Can you help me grow my email list?</h3>
+          <p>Yes, we provide strategies to capture leads and grow your subscriber list effectively.</p>
+        </div>
       </section>
 
       {/* Call to Action Section */}

@@ -28,7 +28,6 @@ const PPCServices = lazy(() => import('./components/PPCServices'))
 const SocialMediaMarketing = lazy(() => import('./components/SocialMediaMarketing'))
 const AffiliateMarketing = lazy(() => import('./components/AffiliateMarketing'))
 const EcommerceMarketing = lazy(() => import('./components/EcommerceMarketing'))
-const Services = lazy(() => import('./components/Services'));
 function App() {
   return (
     <Router>
@@ -64,7 +63,6 @@ function App() {
             <Route path='/socialMedia-Marketing' element={<SocialMediaMarketing />} />
             <Route path='/Affiliate-marketing' element={<AffiliateMarketing />} />
             <Route path='/Ecommerce-marketing' element={<EcommerceMarketing />} />
-            <Route path='/Services' element={<Services />} />
             
 
             {/* Add the ContactUs route */}

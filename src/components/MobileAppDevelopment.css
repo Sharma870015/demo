@@ -66,6 +66,106 @@
   }
 }
 
+/* Why Choose Us Section */
+.why-choose-us {
+  padding: 40px 20px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.why-choose-title {
+  font-size: 2.5rem;
+  color: #004080;
+  margin-bottom: 20px;
+}
+
+.why-choose-description {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.why-choose-list {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.why-choose-item {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 40px 20px;
+}
+
+.faq-title {
+  font-size: 2.5rem;
+  color: #004080;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.faq-question {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #004080;
+}
+
+.faq-answer {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .why-choose-title, .faq-title {
+    font-size: 2rem;
+  }
+
+  .why-choose-description, .faq-answer {
+    font-size: 1rem;
+  }
+
+  .faq-question {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .why-choose-title, .faq-title {
+    font-size: 1.8rem;
+  }
+
+  .why-choose-description, .faq-answer {
+    font-size: 0.9rem;
+  }
+
+  .faq-question {
+    font-size: 1.2rem;
+  }
+}
+
 
 
 
