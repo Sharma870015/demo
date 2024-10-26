@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./ECommerceWebAppDev.css"; // Import the CSS for styling
 import Background from "./Ecommerce.jpg"; // Replace with your background image URL
 import { Link } from "react-router-dom";
 
 const ECommerceWebAppDev = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="ecommerce-container">
       {/* Image with Overlay Text */}

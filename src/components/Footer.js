@@ -1,6 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import logo from './DigiLogo.png'
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -16,10 +17,10 @@ const Footer = () => {
           <div className="footer-column">
             <h4>Web Development</h4>
             <ul>
-              <li><i className="fas fa-angle-right"></i> WordPress Website</li>
-              <li><i className="fas fa-angle-right"></i> Custom Web App</li>
-              <li><i className="fas fa-angle-right"></i> Dynamic Website</li>
-              <li><i className="fas fa-angle-right"></i> E-Commerce Website</li>
+              <Link className='adjs' to='/wordpress-development'><i className="fas fa-angle-right"></i> WordPress Website</Link><br></br>
+              <Link className='adjs' to='/custom-webdev'><i className="fas fa-angle-right"></i> Custom Web App</Link><br></br>
+              <Link className='adjs' to='/Dynamic_WebDev'><i className="fas fa-angle-right"></i> Dynamic Website</Link><br></br>
+              <Link className='adjs' to='/E-commerce_WebApp'><i className="fas fa-angle-right"></i> E-Commerce Website</Link><br></br>
             </ul>
           </div>
 
@@ -38,10 +39,10 @@ const Footer = () => {
           <div className="footer-column">
             <h4>Digital Marketing</h4>
             <ul>
-              <li><i className="fas fa-angle-right"></i> SEO</li>
-              <li><i className="fas fa-angle-right"></i> Email Marketing</li>
-              <li><i className="fas fa-angle-right"></i> Affiliate Marketing</li>
-              <li><i className="fas fa-angle-right"></i> PPC</li>
+              <Link className='adjs' to='/SEO-Services'><i className="fas fa-angle-right"></i> SEO</Link><br></br>
+              <Link className='adjs' to='/EmailMarketingService'><i className="fas fa-angle-right"></i> Email Marketing</Link><br></br>
+              <Link className='adjs' to='/Affiliate-marketing'><i className="fas fa-angle-right"></i> Affiliate Marketing</Link><br></br>
+              <Link className='adjs' to='/PPC-Services'><i className="fas fa-angle-right"></i> PPC</Link><br></br>
             </ul>
           </div>
 
@@ -49,18 +50,15 @@ const Footer = () => {
           <div className="footer-column">
             <h4>Information</h4>
             <ul>
-              <li><i className="fas fa-angle-right"></i> About</li>
-              <li><i className="fas fa-angle-right"></i> Privacy</li>
-              <li><i className="fas fa-angle-right"></i> Teams</li>
-              <li><i className="fas fa-angle-right"></i> Portfolio</li>
-              <li><i className="fas fa-angle-right"></i> E-Commerce</li>
+              <Link className='adjs' to='/about'><i className="fas fa-angle-right"></i> About</Link><br></br>
+              <Link className='adjs' to='#'><i className="fas fa-angle-right"></i> Privacy</Link><br></br>
+              <Link className='adjs' to='/web-development'><i className="fas fa-angle-right"></i> Web Development</Link><br></br>
             </ul>
           </div>
         </div>
 
         <div className="footer-bottom">
           {/* Address and Contact Info */}
-          <p className='address'><strong>Address:</strong> N/A </p>
           <p className='telNum'><strong>Tel:</strong> +91-8700156237</p>
           <p className='mail'><strong>Email:</strong> info@DigiAppify.com</p>
 

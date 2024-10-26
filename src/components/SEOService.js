@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./SEOService.css"; // Import the CSS for styling
-import SEOImage from "./SEOServices.jpg"; // Replace with your background image URL
+import SEOImage from "./MainSEO.jpg"; // Replace with your background image URL
 import { Link } from "react-router-dom";
 
 const SEOService = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="seo-container">
       {/* Hero Section */}

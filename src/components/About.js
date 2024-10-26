@@ -1,8 +1,27 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./About.css"; // Assuming you'll add the CSS separately for styling
 import AboutUs from "./AboutUs.avif";
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSendMessage = (e) => {
+    e.preventDefault();
+    const phoneNumber = "918700156237"; // Replace with your WhatsApp number in international format
+    const whatsappMessage = `Hello, my name is ${name}. You can contact me at ${email}. ${message}`;
+
+    window.open(
+      `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`,
+      "_blank"
+    );
+  };
+
   return (
     <div className="about-container">
       {/* Header Section with Image and Overlay Text */}
@@ -100,10 +119,28 @@ const About = () => {
       {/* Contact Section */}
       <section className="contact-section">
         <h2>Contact Us</h2>
-        <form className="contact-form">
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
-          <textarea placeholder="Your Message" rows="5" required></textarea>
+        <form className="contact-form" onSubmit={handleSendMessage}>
+          <input
+            type="text"
+            placeholder="Your Name"
+            required
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+          <input
+            type="email"
+            placeholder="Your Email"
+            required
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <textarea
+            placeholder="Your Message"
+            rows="5"
+            required
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+          ></textarea>
           <button type="submit">Send Message</button>
         </form>
       </section>

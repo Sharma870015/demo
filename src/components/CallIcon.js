@@ -1,20 +1,21 @@
-// CallIcon.js
 import React, { useEffect, useState } from 'react';
 import './CallIcon.css';
-import ContactModal from './ContactModal'; // Import the modal
-import call from './Call-removebg-preview.png'
+import call from './chatIcon.png';
 
 const CallIcon = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleScroll = () => {
     const scrollY = window.scrollY;
     setIsVisible(scrollY > 200); // Adjust this value as needed
   };
 
-  const toggleModal = () => {
-    setIsModalOpen(!isModalOpen);
+  const redirectToWhatsApp = () => {
+    const phoneNumber = '918700156237'; // Replace with your WhatsApp number (e.g., '919876543210' for India)
+    const message = encodeURIComponent('Hi, I found your website and I would like to know more about your services. Can we chat?'); // Replace with your message
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
+
+    window.open(whatsappUrl, '_blank'); // Opens WhatsApp in a new tab/window
   };
 
   useEffect(() => {
@@ -27,11 +28,10 @@ const CallIcon = () => {
   return (
     <div>
       {isVisible && (
-        <div className="call-icon" onClick={toggleModal}>
+        <div className="call-icon" onClick={redirectToWhatsApp}>
           <img src={call} alt="Call Us" />
         </div>
       )}
-      <ContactModal isOpen={isModalOpen} onClose={toggleModal} />
     </div>
   );
 };

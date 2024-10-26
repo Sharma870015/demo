@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useEffect } from "react";
 import './AndroidAppDevelopment.css';
 import { Link } from 'react-router-dom';
 import android from './Android2.jpg'
 
 const AndroidAppDevelopment = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="android-app">
       {/* Top section with image */}
@@ -19,11 +22,12 @@ const AndroidAppDevelopment = () => {
       <div className="content">
         <h1 className='Android_head'>Android App Development</h1>
         <p className='just_descr'>
-          We offer professional Android app development services, tailored to meet your business needs. Our team of expert developers ensures that your app is scalable, user-friendly, and equipped with the latest technology.
+        We offer professional Android app development services, tailored to meet your business needs. Our team of expert developers leverages the latest technologies and industry best practices to create high-performance, scalable, and user-friendly Android applications. Whether you need a simple utility app or a complex enterprise solution, we have the expertise to bring your vision to life.
         </p>
-         {/* Card Section for Android Services */}
-         <section className="services-card-section">
-          <h2 className="section-title">Android Development Services</h2>
+        
+        {/* Card Section for Android Services */}
+        <section className="services-card-section">
+          <h2 className="section-title">Our Services</h2>
           <div className="cards-container">
             <div className="card">
               <h3 className="card-title">Custom Android App Development</h3>
@@ -49,16 +53,10 @@ const AndroidAppDevelopment = () => {
                 Ensure your Android app is bug-free, secure, and performs smoothly across various devices with our QA services.
               </p>
             </div>
-            <div className="card">
-              <h3 className="card-title">Wearables, Tablets, and TV Apps</h3>
-              <p className="card-desc">
-                We develop Android apps compatible with wearables, tablets, and Android TVs, expanding your reach across devices.
-              </p>
-            </div>
           </div>
         </section>
 
-        {/* Expertise section */}
+        {/* Why choose us */}
         <section className="exper-section">
           <h2 className='why_us'>Why Choose Us?</h2>
           <ul className='choose_detail'>
@@ -71,22 +69,41 @@ const AndroidAppDevelopment = () => {
           </ul>
         </section>
 
-        {/* Services we provide */}
-        <section className="service-section">
-          <h2 className='provide_serv'>Services We Provide</h2>
-          <p className='serv_descr'>We cover a wide range of Android app development services:</p>
-          <ul className='serv_data'>
-            <li>Custom Android app development</li>
-            <li>Android game development</li>
-            <li>App redesign and optimization</li>
-            <li>App testing and quality assurance</li>
-            <li>Integration of advanced features (e.g., AI, AR/VR)</li>
-            <li>Support for Android Wearables, Tablets, and TVs</li>
-            <li>App deployment and launch on Google Play Store</li>
-          </ul>
+        {/* FAQ Section */}
+        <section className="faq-section">
+          <h2 className='faq-title'>Frequently Asked Questions (FAQ)</h2>
+          <div className="faq-item">
+            <h3 className="faq-question">Q. How long does it take to develop an Android app?</h3>
+            <p className="faq-answer"><strong>Ans.</strong>
+              The development timeline depends on the complexity of the app. A simple app may take a few weeks, while a more complex one could take several months.
+            </p>
+          </div>
+          <div className="faq-item">
+            <h3 className="faq-question">Q. Do you provide post-launch support and maintenance?</h3>
+            <p className="faq-answer"><strong>Ans.</strong>
+              Yes, we offer post-launch support and maintenance services to ensure your app remains up-to-date and runs smoothly.
+            </p>
+          </div>
+          <div className="faq-item">
+            <h3 className="faq-question">Q. What technologies do you use for Android app development?</h3>
+            <p className="faq-answer"><strong>Ans.</strong>
+              We primarily use Kotlin and Java for Android app development, along with the latest Android frameworks such as Jetpack for efficient and modern development.
+            </p>
+          </div>
+          <div className="faq-item">
+            <h3 className="faq-question">Q. Can you help with app deployment to the Google Play Store?</h3>
+            <p className="faq-answer"><strong>Ans.</strong>
+              Absolutely! We handle the entire process of deploying your app to the Google Play Store, including setting up listings, icons, and descriptions.
+            </p>
+          </div>
+          <div className="faq-item">
+            <h3 className="faq-question">Q. Do you offer cross-platform development services?</h3>
+            <p className="faq-answer"><strong>Ans.</strong>
+              Yes, besides Android app development, we also offer cross-platform development using frameworks like Flutter and React Native to target both Android and iOS platforms.
+            </p>
+          </div>
         </section>
         
-
         {/* Contact and CTA */}
         <section className="section">
           <h2 className='Redirect'>Get Started with Your Android App Today!</h2>

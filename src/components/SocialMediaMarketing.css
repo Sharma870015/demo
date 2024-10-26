@@ -5,7 +5,7 @@
 }
 .button {
   padding: 10px;
-  background: #004080;
+  background: #0073aa;
   color: #fff;
   border-radius: 5px;
   border: none;
@@ -36,7 +36,7 @@
   color: white;
 }
 .hdesc {
-  color: #004080;
+  color: #0073aa;
 }
 .smm-hero-overlay h1 {
   font-size: 2.5rem;
@@ -49,7 +49,7 @@
   animation: fadeInUp 1s ease-in-out;
 }
 .for_clr {
-  color: #004080;
+  color: #0073aa;
 }
 /* Description Section */
 .smm-description {
@@ -65,6 +65,7 @@
   max-width: 800px;
   margin: 0 auto;
   font-size: 1.1rem;
+  color: #666;
 }
 /* Services Section */
 .smm-services {
@@ -84,7 +85,7 @@
   margin: 0 auto; /* Center the container */
 }
 
-.service-card {
+.services-card {
   background: white;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -104,7 +105,7 @@
 
 
 @media screen and (max-width: 480px) {
-  .service-card {
+  .services-card {
       width: 90%; /* 1 card per row for mobile */
   }
 }
@@ -113,21 +114,23 @@
   background: #eee;
   border-radius: 10px;
 }
-.service-card:hover {
+.services-card:hover {
   transform: translateY(-10px);
 }
-.service-card img {
+.services-card img {
   width: 100%;
   height: 200px;
   object-fit: cover;
   border-radius: 10px;
 }
-.service-card h3 {
+.services-card h3 {
   font-size: 1.5rem;
   margin-top: 15px;
+  color: #0073aa;
 }
-.service-card p {
+.services-card p {
   margin-top: 10px;
+  color: #666;
 }
 /* Why Choose Us Section */
 .smm-why-choose-us {
@@ -176,7 +179,7 @@
 .smm-cta {
   padding: 50px 20px;
   text-align: center;
-  background-color: #007bff;
+  background-color: #0073aa;
   color: white;
 }
 .smm-cta h2 {
@@ -227,7 +230,7 @@
   .smm-faq h2 {
       font-size: 1.5rem;
   }
-  .service-card {
+  .services-card {
       width: 90%;
       margin: 10px 0;
   }

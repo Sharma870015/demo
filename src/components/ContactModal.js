@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import './ContactModal.css';
 
 const ContactModal = ({ isOpen, onClose }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [formData, setFormData] = useState({
     name: "",
     email: "",

@@ -59,9 +59,9 @@ const Para = () => {
           <div className="card">
             <h3 className="card_title">SEO Optimization</h3>
             <p className="card_desc">Improving your website’s visibility and rankings on search engines.</p>
-            <button className="arrow_button">
+            <Link to='/SEO-Services' className="arrow_button">
                <FontAwesomeIcon icon={faAngleRight} />
-            </button>
+            </Link>
           </div>
         </div>
       </div>

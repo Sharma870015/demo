@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useEffect } from "react";
 import './AppleWatchAppDev.css'; // Import the CSS file for this component
 import Apple from './AppleApp.jpg';
+import { Link } from 'react-router-dom';
 
 const AppleWatchAppDev = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="apple-watch-app">
       {/* Top Section */}
@@ -55,7 +59,7 @@ const AppleWatchAppDev = () => {
         </div>
       </div>
 
-      {/* Expertise Section */}
+      {/* Why choose us section */}
       <div className="exper-section">
         <h2 className="why_us">Why Choose Us?</h2>
         <ul className="choose_detail">
@@ -88,10 +92,14 @@ const AppleWatchAppDev = () => {
         </ul>
       </div>
 
-      {/* Call-to-Action Button */}
-      <a href="#contact" className="cta-button">
-        Get Started with Your Apple Watch App!
-      </a>
+      {/* Contact and CTA */}
+      <section className="section">
+          <h2 className='Redirect'>Get Started with Your Android App Today!</h2>
+          <p className='redir_descr'>
+            Whether you're starting a new project or enhancing an existing app, our expert team is here to help. Contact us to learn more about how we can bring your Android app idea to life.
+          </p>
+          <Link to="/contact" className="cta-button">Contact Us</Link>
+        </section>
     </div>
   );
 };

@@ -199,7 +199,10 @@
 /* Responsiveness for Max Width 480px */
 @media (max-width: 480px) {
   .about-header {
-    height: 400px;
+    height: 200px;
+  }
+  .about-header-image{
+    height: 200px;
   }
 
   .about-header-title {

@@ -9,7 +9,7 @@ body {
   .android-app {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 30px;
+    padding: 10px;
     background: linear-gradient(145deg, #ffffff, #e8f5e9);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
@@ -49,7 +49,6 @@ body {
   
   /* Content Section */
   .content {
-    padding: 20px;
     color: #333;
   }
   
@@ -57,14 +56,14 @@ body {
     font-size: 2.8rem;
     color: #00796b;
     text-align: center;
-    margin-bottom: 20px;
-    background: #004080;
+    margin-bottom: 10px;
+    background: #0073aa;
     -webkit-background-clip: text;
     color: transparent;
   }
   
   .just_descr {
-    font-size: 1.3rem;
+    font-size: 1rem;
     line-height: 1.7;
     color: #666;
     margin-bottom: 40px;
@@ -78,11 +77,12 @@ body {
   .exper-section {
     margin-bottom: 40px;
     text-align: center;
+    padding: 15px;
   }
   
   .why_us {
     font-size: 2.2rem;
-    color: #004080;
+    color: #0073aa;
     margin-bottom: 20px;
     position: relative;
   }
@@ -92,7 +92,7 @@ body {
     display: block;
     width: 80px;
     height: 4px;
-    background: #004080;
+    background: #0073aa;
     margin: 10px auto 0;
   }
   
@@ -121,7 +121,7 @@ body {
   
   .provide_serv {
     font-size: 2.2rem;
-    color: #004080;
+    color: #0073aa;
     margin-bottom: 20px;
   }
   
@@ -212,17 +212,17 @@ body {
 .services-card-section {
   margin: 40px 0;
   text-align: center;
+  padding: 15px;
 }
-
 .section-title {
   font-size: 2.2rem;
-  color: #004080;
-  margin-bottom: 30px;
+  color: #0073aa;
+  margin-bottom: 20px;
 }
 
 .cards-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   margin-top: 20px;
 }
@@ -241,13 +241,13 @@ body {
 }
 
 .card-title {
-  font-size: 1.6rem;
-  color: #004080;
+  font-size: 1.2rem;
+  color: #0073aa;
   margin-bottom: 10px;
 }
 
 .card-desc {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   color: #555;
   line-height: 1.6;
 }
@@ -259,30 +259,65 @@ body {
   }
 }
 
-  
+
+/* FAQ section */
+
+.faq-section {
+  margin: 50px 0;
+  padding: 15px;
+  background-color: #eee;
+  border-radius: 15px;
+}
+
+.faq-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #0073aa;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-question {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.faq-answer {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #555;
+}
+
+
   /* Call to Action Section */
   .section {
     text-align: center;
     margin-top: 50px;
+    background: #0073aa;
+    border-radius: 10px;
+    padding: 15px;
   }
   
   .Redirect {
-    font-size: 2.2rem;
-    color: #004080;
-    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 10px;
   }
   
   .redir_descr {
-    font-size: 1.3rem;
-    margin-bottom: 30px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #fff;
   }
   
   .cta-button {
     display: inline-block;
     padding: 15px 40px;
-    font-size: 1.3rem;
-    color: #fff;
-    background-color: #004080;
+    font-size: 1rem;
+    background-color: #fff;
     border: none;
     border-radius: 30px;
     box-shadow: 0 4px 15px rgba(0, 150, 136, 0.4);
@@ -290,7 +325,7 @@ body {
   }
   
   .cta-button:hover {
-    background-color: #004d40;
+    background-color: #3b85f3;
     box-shadow: 0 6px 20px rgba(0, 77, 64, 0.5);
   }
   

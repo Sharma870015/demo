@@ -1,19 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./PPCServices.css"; // Import the CSS for styling
 import PPCImage from "./PPC.jpg"; // Replace with your PPC image URL
+import { Link } from "react-router-dom";
 
 const PPCServices = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="ppc-services-container">
       {/* Hero Section */}
       <div className="ppc-hero">
         <img src={PPCImage} alt="PPC Services" className="ppc-hero-image" />
         <div className="ppc-hero-text">
-          <h1>Maximize Your ROI with Our PPC Services</h1>
-          <p>
+          <h1>PPC Services</h1>
+          <p className="mb">
             Drive traffic and boost conversions with our targeted pay-per-click campaigns.
           </p>
-          <button className="ppc-cta-button">Get Started</button>
+          <Link to='/contact' className="ppc-cta-button">Get Started</Link>
         </div>
       </div>
 
@@ -64,23 +68,23 @@ const PPCServices = () => {
       <section className="ppc-faq">
         <h2>Frequently Asked Questions</h2>
         <div className="faq-item">
-          <h3>What is PPC advertising?</h3>
-          <p>PPC advertising is a model where advertisers pay each time a user clicks on their ad. It’s an effective way to gain visibility quickly.</p>
+          <h4>What is PPC advertising?</h4>
+          <p className="answr">PPC advertising is a model where advertisers pay each time a user clicks on their ad. It’s an effective way to gain visibility quickly.</p>
         </div>
         <div className="faq-item">
-          <h3>How quickly can I see results?</h3>
+          <h4>How quickly can I see results?</h4>
           <p>Many clients see results almost immediately after launching their campaigns, with increased traffic and conversions.</p>
         </div>
         <div className="faq-item">
-          <h3>Can you manage my PPC campaigns?</h3>
+          <h4>Can you manage my PPC campaigns?</h4>
           <p>Yes, we provide full management services for PPC campaigns, from setup to ongoing optimization.</p>
         </div>
       </section>
 
       {/* Call to Action Section */}
       <div className="ppc-contact">
-        <h3>Ready to Boost Your Online Presence?</h3>
-        <button className="ppc-contact-btn">Contact Us Today</button>
+        <h3 className="mrgn">Ready to Boost Your Online Presence?</h3>
+        <Link to='/contact' className="ppc-contact-btn">Contact Us Today</Link>
       </div>
     </div>
   );

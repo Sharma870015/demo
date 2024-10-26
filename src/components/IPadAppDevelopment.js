@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useEffect } from "react";
 import './IPadAppDevelopment.css';
 import { Link } from 'react-router-dom';
 import ipad from './iPad App Development 1980 X 850.jpg'; // Replace with your iPad image
 
 const IPadAppDevelopment = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="ipad-app">
       {/* Top section with image */}
@@ -48,12 +51,6 @@ const IPadAppDevelopment = () => {
               <h3 className="card-title">App Testing & Quality Assurance</h3>
               <p className="card-desc">
                 Ensure your iPad app is free of bugs, secure, and performs well across various iPad versions and sizes.
-              </p>
-            </div>
-            <div className="card">
-              <h3 className="card-title">Enterprise iPad Solutions</h3>
-              <p className="card-desc">
-                Build enterprise-grade applications to enhance productivity and streamline business operations on iPads.
               </p>
             </div>
           </div>

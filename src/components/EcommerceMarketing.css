@@ -3,6 +3,54 @@
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
   }
+
+  /* Intro Section */
+.intro-section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+.color {
+  color: #0073aa;
+  font-size: 2rem;
+}
+
+.intro-heading {
+  font-size: 2rem;
+  color: #0073aa;
+  margin-bottom: 20px;
+}
+
+.intro-description {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .intro-heading {
+    font-size: 1.8rem;
+  }
+
+  .intro-description {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .intro-heading {
+    font-size: 1.5rem;
+  }
+
+  .intro-description {
+    font-size: 0.9rem;
+  }
+}
+
   
   /* Hero Section */
   .ecommerce-hero {
@@ -67,54 +115,55 @@
     background-color: #0056b3;
   }
   
-  /* Services Section */
-  .ecommerce-services {
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #f9f9f9;
+/* Services Section */
+.ecommerce-services {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Or use justify-content: center; */
+  gap: 20px;
+  width: 100%;
+}
+
+.services-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  width: calc(33.333% - 30px); /* Adjusting width for 3 cards per row */
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.services-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.services-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 768px) {
+  .services-card {
+    width: calc(50% - 30px); /* 2 cards per row on tablet-sized screens */
   }
-  
-  .ecommerce-services h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
-    animation: fadeInDown 1s ease;
+}
+
+@media screen and (max-width: 480px) {
+  .services-card {
+    width: 90%; /* 1 card per row on mobile-sized screens */
   }
-  
-  .services-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .service-card {
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 15px;
-    width: 300px;
-    padding: 20px;
-    transition: transform 0.3s;
-  }
-  
-  .service-card:hover {
-    transform: translateY(-10px);
-  }
-  
-  .service-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-  }
-  
-  .service-card h3 {
-    font-size: 1.5rem;
-    margin-top: 15px;
-  }
-  
-  .service-card p {
-    margin-top: 10px;
-  }
+}
+
   
   /* Strategy Section */
   .ecommerce-strategy {
@@ -206,7 +255,7 @@
       font-size: 0.9rem;
     }
   
-    .service-card {
+    .services-card {
       width: 90%;
       margin: 10px 0;
     }
@@ -221,3 +270,182 @@
     }
   }
   
+
+
+
+  /* General Styles */
+.ecommerce-page {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.ecommerce-hero {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  background: #222;
+}
+
+.ecommerce-hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(5px);
+}
+
+.ecommerce-hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.cta-button {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+/* Services Section */
+.ecommerce-services {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.services-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  width: 300px;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.services-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.services-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.why-choose-us ul {
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+}
+
+.why-choose-us li {
+  margin: 10px 0;
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 50px 20px;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  margin: 20px 0;
+  text-align: left;
+}
+
+.faq-item h4 {
+  font-size: 1.4rem;
+}
+
+.faq-item p {
+  margin-top: 10px;
+}
+
+/* Call to Action Section */
+.ecommerce-cta {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #0073aa;
+  color: white;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+  .ecommerce-hero-overlay h1 {
+    font-size: 1.8rem;
+  }
+
+  .cta-button {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+
+  .services-card, .strategy-step {
+    width: 90%;
+  }
+
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .faq-container {
+    text-align: left;
+  }
+}
+.titl {
+  font-size: 1.5rem;
+  color: #0073aa;
+}
+.des {
+  color: #666;
+}
+.look {
+  padding: 15px;
+  background: #eee;
+  border-radius: 10px;
+}

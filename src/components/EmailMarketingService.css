@@ -63,8 +63,6 @@
     background: #f8f9fa; /* Light background for better visibility */
     border-radius: 10px;
     padding: 15px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease; /* Transition effect */
 }
 
 .faq-item:hover {
@@ -73,12 +71,12 @@
 
 .faq-item h3 {
     font-size: 1.5rem;
-    color: #0073aa;
+    color: #535353;
 }
 
 .faq-item p {
     font-size: 1rem;
-    color: #555;
+    color: #666;
 }
 
 /* Responsive Styles */
@@ -344,8 +342,8 @@
 }
 
 .email-contact-btn {
-    background-color: #28a745;
-    color: white;
+    background-color: #fff;
+    color: #555;
     padding: 10px 15px;
     border: none;
     border-radius: 5px;

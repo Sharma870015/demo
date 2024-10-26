@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./DynamicWebsiteDev.css"; // Import the CSS for styling
 import Background from "./DynamicWebDev.png"; // Replace with your background image URL
 import { Link } from "react-router-dom";
 
 const DynamicWebsiteDev = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="dynamic-container">
       {/* Image with Overlay Text */}

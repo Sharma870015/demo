@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./CustomWebAppDev.css"; // Import the CSS for styling
 import Background from "./CustomWebApp.jpg"; // Replace with your background image URL
 import { Link } from "react-router-dom";
 
 const CustomWebAppDev = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="custom-container">
       {/* Image with Overlay Text */}

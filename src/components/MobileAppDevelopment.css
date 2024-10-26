@@ -54,7 +54,10 @@
 /* Media query for mobile devices (max-width: 480px) */
 @media (max-width: 480px) {
   .hero-section {
-    height: 400px; /* Adjusted height for mobile screens */
+    height: 200px; /* Adjusted height for mobile screens */
+  }
+  .hero-image{
+    height: 200px;
   }
 
   .hero-title {
@@ -66,44 +69,50 @@
   }
 }
 
-/* Why Choose Us Section */
-.why-choose-us {
-  padding: 40px 20px;
-  background-color: #f5f5f5;
+/* Expertise Section */
+.exper-section {
+  margin-bottom: 40px;
   text-align: center;
 }
 
-.why-choose-title {
-  font-size: 2.5rem;
+.why_us {
+  font-size: 2.2rem;
   color: #004080;
   margin-bottom: 20px;
+  position: relative;
 }
 
-.why-choose-description {
-  font-size: 1.2rem;
-  color: #555;
-  margin-bottom: 30px;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+.why_us::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #004080;
+  margin: 10px auto 0;
 }
 
-.why-choose-list {
-  list-style: none;
-  padding: 0;
+.choose_detail {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 1.1rem;
+  line-height: 2;
+  text-align: left;
   max-width: 800px;
   margin: 0 auto;
 }
 
-.why-choose-item {
-  font-size: 1.1rem;
-  color: #333;
-  margin-bottom: 10px;
+.choose_detail li {
+  background: url('https://cdn-icons-png.flaticon.com/128/1271/1271380.png') no-repeat left center;
+  background-size: 20px;
+  padding-left: 40px;
+  margin-bottom: 12px;
 }
+
 
 /* FAQ Section */
 .faq-section {
   padding: 40px 20px;
+  background-color: #eee;
 }
 
 .faq-title {
@@ -116,6 +125,11 @@
 .faq-container {
   max-width: 800px;
   margin: 0 auto;
+}
+.why-choose-item {
+  padding: 15px;
+  background: #eee;
+  border-radius: 10px;
 }
 
 .faq-item {
@@ -135,6 +149,16 @@
 .faq-answer {
   font-size: 1.1rem;
   color: #555;
+}
+
+.cta-section {
+  text-align: center;
+  background: #004080;
+  padding: 40px 0px;
+  color: #fff;
+}
+.btn-title {
+  margin-bottom: 15px;
 }
 
 /* Media Queries for Responsiveness */
@@ -221,6 +245,21 @@
     font-size: 1rem;
     color: #555;
   }
+
+  /* { contact button } */
+
+  .btn {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  .btn-div {
+    padding: 15px;
+    background: #0073aa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+  }
   
   /* Centering the Get Started button */
   .cta-container {
@@ -236,7 +275,7 @@
   
   .cta-description {
     font-size: 1.2rem;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     color: #fff;
   }
   

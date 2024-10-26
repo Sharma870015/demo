@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useEffect } from "react";
 import './SocialMediaMarketing.css';
 import PCA from './PCA.webp';
 import Social from './SMM.jpg';
 import Content from './CCM.webp';
 import Back from './SMM.webp';
+import { Link } from 'react-router-dom';
 
 const SocialMediaMarketing = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="smm-page">
       {/* Hero Section */}
@@ -18,7 +22,7 @@ const SocialMediaMarketing = () => {
         <div className="smm-hero-overlay">
           <h1 className='for_clr'>Social Media Marketing</h1>
           <p className='hdesc'>Boost Your Brand with Our Expert Strategies</p>
-          <button className="button">Get Started</button>
+          <Link to='/contact' className="button">Get Started</Link>
         </div>
       </section>
 
@@ -34,20 +38,20 @@ const SocialMediaMarketing = () => {
       <section className="smm-services">
         <h2 className='for_clr'>Our Digital Marketing Services</h2>
         <div className="services-container">
-          <div className="service-card">
+          <div className="services-card">
             <h3>Paid Campaigns</h3>
             <p>Leverage targeted advertising to maximize your reach, drive traffic, and achieve measurable results through data-driven strategies.</p>
           </div>
-          <div className="service-card">
+          <div className="services-card">
             <h3>Social Media Management</h3>
             <p>Strategically manage your social media platforms to enhance brand visibility and foster meaningful connections with your audience.</p>
           </div>
-          <div className="service-card">
+          <div className="services-card">
             <h3>Content Creation</h3>
             <p>Craft engaging content that speaks to your audience, from social media posts to blogs, designed to boost engagement and brand loyalty.
             </p>
           </div>
-          <div className="service-card">
+          <div className="services-card">
             <h3>Influencer Marketing</h3>
             <p>Partner with influencers to promote your brand and reach a wider audience. Leverage their credibility and reach for impactful marketing.</p>
           </div>
@@ -89,7 +93,7 @@ const SocialMediaMarketing = () => {
       <section className="smm-cta">
         <h2>Ready to Elevate Your Brand?</h2>
         <p>Let’s take your social media presence to the next level with our expert team.</p>
-        <button className="down-button">Contact Us Today</button>
+        <Link to='/contact' className="down-button">Contact Us Today</Link>
       </section>
     </div>
   );

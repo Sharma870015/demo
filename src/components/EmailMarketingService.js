@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./EmailMarketingService.css"; // Import the CSS for styling
 import EmailMarketingImage from "./EmailMarketing.png"; // Replace with your background image URL
 import { Link } from "react-router-dom";
 
 const EmailMarketingService = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="email-marketing-container">
       {/* Hero Section */}

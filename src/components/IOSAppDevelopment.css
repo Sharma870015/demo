@@ -83,7 +83,7 @@ body {
   }
   
   .card {
-    background-color: #004080;
+    background-color: #e0f7fa;
     padding: 20px;
     width: 45%;
     margin-bottom: 20px;
@@ -94,12 +94,12 @@ body {
   .card h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #fff;
+    color: #0073aa;
   }
   
   .card p {
     font-size: 0.9rem;
-    color: #fff;
+    color: #555;
   }
   
   @media (max-width: 768px) {
@@ -265,27 +265,44 @@ body {
 }
 
 
-/* Why Choose Us Section */
-.why-choose-us-list {
-  list-style-type: disc; /* Use bullet points */
-  padding-left: 20px; /* Indent the list */
-  text-align: left; /* Align text to the left */
-  margin-bottom: 30px; /* Add some space below the list */
-}
-
-.why-choose-us-list li {
-  position: relative; /* For pseudo-element */
-  padding-left: 1.5em; /* Space between bullet and text */
-  margin-bottom: 10px; /* Space between list items */
-}
-
-.why-choose-us-list li::before {
-  content: '✓'; /* Use a checkmark as bullet */
-  position: absolute; /* Position bullet */
-  left: 0; /* Align bullet */
-  color: #007aff; /* Blue color for checkmark */
-  font-weight: bold; /* Make checkmark bold */
-}
+  /* Expertise Section */
+  .exper-section {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .why_us {
+    font-size: 2.2rem;
+    color: #004080;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .why_us::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #004080;
+    margin: 10px auto 0;
+  }
+  
+  .choose_detail {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 1.1rem;
+    line-height: 2;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .choose_detail li {
+    background: url('https://cdn-icons-png.flaticon.com/128/1271/1271380.png') no-repeat left center;
+    background-size: 20px;
+    padding-left: 40px;
+    margin-bottom: 12px;
+  }
 
 /* FAQ Section */
 .faq-section {
@@ -300,6 +317,7 @@ body {
   margin-bottom: 20px; /* Space between FAQs */
   padding: 15px; /* Add padding */
   border-bottom: 1px solid #ccc; /* Divider */
+  text-align: left;
 }
 
 .faq-item:last-child {
@@ -361,16 +379,16 @@ body {
   .cta-button {
     padding: 15px 30px;
     font-size: 1.2rem;
-    color: #fff;
-    background-color: #007aff;
+    color: #555;
+    background-color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 30px;
     text-decoration: none;
     transition: background-color 0.3s ease;
   }
   
   .cta-button:hover {
-    background-color: #005bb5;
+    background-color: #2289ef;
   }
   
   /* Responsive Design */
@@ -387,5 +405,19 @@ body {
       padding: 10px 20px;
       font-size: 1rem;
     }
+  }
+  
+  .section {
+    margin-top: 5rem;
+    background: #0073aa;
+    color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+  }
+  .Redirect {
+    margin-bottom: 15px;
+  }
+  .redir_descr {
+    margin-bottom: 30px;
   }
   

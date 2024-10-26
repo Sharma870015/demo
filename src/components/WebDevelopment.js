@@ -25,30 +25,38 @@ const WebDevelopment = () => {
           </p>
         </div>
       </div>
+{/* New Intro Section */}
+<div className="intro-section">
+  <h2 className="intro-title">Web Development</h2>
+  <p className="intro-description">
+  At our Web Development Agency, we’re passionate about crafting websites that not only look visually stunning but also provide exceptional performance and functionality. Our experienced team specializes in creating custom solutions tailored to your unique business requirements. We take pride in staying at the forefront of industry trends, ensuring that your website remains competitive and relevant. From seamless navigation to responsive design, every element is thoughtfully designed to enhance user experience and drive meaningful engagement.</p>
+</div>
+
+
 
       {/* Services Section */}
-      <div className="services-section">
+      <div className="service-section">
         <h2 className="first-title">Our Services</h2>
         <div className="services-container">
-          <Link to='/wordpress-development' className="service-card">
+          <Link to='/wordpress-development' className="services-card">
             <h3 className="service-title">WordPress Development</h3>
             <p className="service-description">
               Custom WordPress solutions to help build your brand and business online.
             </p>
           </Link>
-          <Link to='/Dynamic_WebDev' className="service-card">
+          <Link to='/Dynamic_WebDev' className="services-card">
             <h3 className="service-title">Dynamic Websites</h3>
             <p className="service-description">
               We create responsive and engaging websites for better user experience.
             </p>
           </Link>
-          <Link to='/E-commerce_WebApp' className="service-card">
+          <Link to='/E-commerce_WebApp' className="services-card">
             <h3 className="service-title">E-Commerce Solutions</h3>
             <p className="service-description">
               Developing e-commerce platforms that maximize sales and customer engagement.
             </p>
           </Link>
-          <Link to='/custom-webdev' className="service-card">
+          <Link to='/custom-webdev' className="services-card">
             <h3 className="service-title">Custom Web Applications</h3>
             <p className="service-description">
               Tailor-made web apps designed to meet your business needs and goals.

@@ -177,8 +177,8 @@ body {
 
 /* Call-to-Action Button */
 .cta-button {
-  background-color: #00796b;
-  color: #fff;
+  background-color: #fff;
+  color: #555;
   padding: 15px 30px;
   border: none;
   border-radius: 30px;
@@ -190,8 +190,21 @@ body {
 }
 
 .cta-button:hover {
-  background-color: #004d40;
+  background-color: #1db7f3;
 }
+
+.section {
+  margin-top: 5rem;
+  background: #0073aa;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+.Redirect {
+  margin-bottom: 15px;
+}
+
 
 /* Responsive Styles */
 @media (max-width: 480px) {

@@ -3,6 +3,9 @@ import './ContactUs.css'; // Separate CSS file for styling
 import { FaPhoneAlt, FaEnvelope, FaWhatsapp } from "react-icons/fa"; // Importing icons
 
 const ContactUs = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [formData, setFormData] = useState({
     name: "",
     email: "",

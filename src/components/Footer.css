@@ -30,6 +30,12 @@
 .footer-column {
   flex: 1 1 20%;
   min-width: 200px;
+  text-align: center;
+}
+.adjs {
+  display: flex;
+  flex-wrap: wrap;
+  color: #ffffff;
 }
 
 .footer-column h4 {

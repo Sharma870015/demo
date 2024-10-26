@@ -2,7 +2,7 @@ import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import DropdownMenu from './components/DropdownMenu';
 import Footer from './components/Footer';
-import CallIcon from './components/CallIcon'; // Import the CallIcon component
+import CallIcon from './components/CallIcon';
 import About from './components/About';
 
 // Lazy load the components
@@ -15,7 +15,7 @@ const MobileAppDevelopment = lazy(() => import('./components/MobileAppDevelopmen
 const DigitalMarketing = lazy(() => import('./components/DigitalMarketing'));
 const ContactUs = lazy(() => import('./components/ContactUs'));
 const AndroidAppDevelopment = lazy(() => import('./components/AndroidAppDevelopment'));
-const IPadAppDevelopment = lazy(() => import('./components/IPadAppDevelopment')); // Import the iPad App Development component
+const IPadAppDevelopment = lazy(() => import('./components/IPadAppDevelopment'));
 const IOSAppDevelopment = lazy(() => import('./components/IOSAppDevelopment')); 
 const AppleWatchAppDev = lazy(() => import('./components/AppleWatchAppDev')); 
 const WordPressDevelopment = lazy(() => import('./components/WordPressDevelopment'))
@@ -28,6 +28,11 @@ const PPCServices = lazy(() => import('./components/PPCServices'))
 const SocialMediaMarketing = lazy(() => import('./components/SocialMediaMarketing'))
 const AffiliateMarketing = lazy(() => import('./components/AffiliateMarketing'))
 const EcommerceMarketing = lazy(() => import('./components/EcommerceMarketing'))
+const BlogSection = lazy(() => import('./components/BlogSection'))
+const FintechSection = lazy(() => import('./components/FintechSection'))
+const EducationIndustriesSection = lazy(() => import('./components/EducationIndustriesSection'))
+const HealthcareSection = lazy(() => import('./components/HealthcareSection'))
+const MediaEntertainmentSection = lazy(() => import('./components/MediaEntertainmentSection'))
 function App() {
   return (
     <Router>
@@ -63,6 +68,11 @@ function App() {
             <Route path='/socialMedia-Marketing' element={<SocialMediaMarketing />} />
             <Route path='/Affiliate-marketing' element={<AffiliateMarketing />} />
             <Route path='/Ecommerce-marketing' element={<EcommerceMarketing />} />
+            <Route path='/Blog' element={<BlogSection />} />
+            <Route path='/Fintech' element={<FintechSection />} />
+            <Route path='/Education' element={<EducationIndustriesSection />} />
+            <Route path='/Healthcare' element={<HealthcareSection />} />
+            <Route path='/Media & Entertainment' element={<MediaEntertainmentSection />} />
             
 
             {/* Add the ContactUs route */}

@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./WordPressDevelopment.css"; // Import the CSS for styling
 import Background from "./Wordpress2.jpg";
 import { Link } from "react-router-dom";
 
 const WordPressDevelopment = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="wordpress-container">
       {/* Image with Overlay Text */}

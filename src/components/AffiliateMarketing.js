@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useEffect } from "react";
 import './AffiliateMarketing.css';
 import image from './AM.jpg';
 import Photo from './Affiliate.jpg';
 import CS from './CS.jpg';
+import { Link } from 'react-router-dom';
 
 const AffiliateMarketing = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="affiliate-page">
       {/* Hero Section */}
@@ -17,7 +21,7 @@ const AffiliateMarketing = () => {
         <div className="affiliate-hero-overlay">
           <h1>Affiliate Marketing</h1>
           <p>Maximize Earnings with Performance-Driven Strategies</p>
-          <button className="cta-button">Join Us Today</button>
+          <Link to='/contact' className="cta-button">Join Us Today</Link>
         </div>
       </section>
 
@@ -59,10 +63,10 @@ const AffiliateMarketing = () => {
           Our team is dedicated to maximizing your affiliate potential with transparent communication and measurable results. We focus on building long-term partnerships that benefit all parties involved.
         </p>
         <ul>
-          <li>Experienced Affiliate Managers</li>
-          <li>Data-Driven Decision Making</li>
-          <li>24/7 Support and Guidance</li>
-          <li>Custom Solutions for Every Business</li>
+          <li className='look'>🚀Experienced Affiliate Managers</li>
+          <li className='look'>🎯Data-Driven Decision Making</li>
+          <li className='look'>📊24/7 Support and Guidance</li>
+          <li className='look'>💰Custom Solutions for Every Business</li>
         </ul>
       </section>
 
@@ -87,7 +91,7 @@ const AffiliateMarketing = () => {
       <section className="affiliate-cta">
         <h2>Ready to Increase Your Earnings?</h2>
         <p>Join our affiliate marketing program and watch your revenue soar.</p>
-        <button className="-button">Start Earning Now</button>
+        <Link to='/contact' className="-button">Start Earning Now</Link>
       </section>
     </div>
   );

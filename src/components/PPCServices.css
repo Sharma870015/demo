@@ -290,6 +290,12 @@
     color: #007bff;
     margin-bottom: 15px;
 }
+.mb {
+    margin-bottom: 25px;
+  }
+  .mrgn {
+    margin-bottom: 15px;
+  }
 
 .faq-item {
     margin: 20px 0;
@@ -306,7 +312,7 @@
 
 .faq-item p {
     font-size: 1rem;
-    color: #555;
+    color: #666;
 }
 
 /* Responsive Design */

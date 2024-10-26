@@ -57,15 +57,15 @@ const DropdownMenu = () => {
             </li>
             <li><a href='#'>Resourcies +</a>
               <ul>
-                <li><a href='#'>Blog</a></li>
+                <li><a href='/Blog'>Blog</a></li>
               </ul>
             </li>
             <li><a href='#'>Industries +</a>
               <ul>
-                <li><a href='#'>Fintech</a></li>
-                <li><a href='#'>Education</a></li>
-                <li><a href='#'>Healthcare</a></li>
-                <li><a href='#'>Media & Entertainment</a></li>
+                <li><a href='/Fintech'>Fintech</a></li>
+                <li><a href='/Education'>Education</a></li>
+                <li><a href='/Healthcare'>Healthcare</a></li>
+                <li><a href='/Media & Entertainment'>Media & Entertainment</a></li>
               </ul>
             </li>
             <li><Link className='contactO' to="/contact">Contact Us</Link></li> {/* Link to Contact Us page */}
