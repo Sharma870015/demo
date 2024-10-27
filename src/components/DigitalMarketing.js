@@ -25,21 +25,7 @@ const DigitalMarketing = () => {
       <div className="digital-marketing-section">
         <h1 className="digital-marketing-title">Our Digital Marketing Services</h1>
         <p className="digital-marketing-intro">
-          At DigiAppify, we provide a range of digital marketing services designed to elevate your brand's online presence and drive growth. Explore our core offerings below:
-        </p>
-
-        {/* Additional Descriptive Paragraphs */}
-        <p className="digital-marketing-description">
-          In today's digital age, having a strong online presence is essential for businesses of all sizes. Our team of experts is dedicated to crafting tailored strategies that resonate with your target audience, helping you achieve your business goals effectively.
-        </p>
-        <p className="digital-marketing-description">
-          We understand that every business is unique, which is why we take the time to analyze your specific needs and challenges. By leveraging data-driven insights and the latest marketing techniques, we ensure that your brand stands out in a crowded marketplace.
-        </p>
-        <p className="digital-marketing-description">
-          Our commitment to transparency and measurable results sets us apart. We provide regular updates and detailed reports to keep you informed about your campaign's progress, allowing you to make informed decisions based on real data.
-        </p>
-        <p className="digital-marketing-description">
-          Whether you're looking to boost your search engine rankings, engage your audience through social media, or increase your conversion rates, our comprehensive suite of digital marketing services has you covered.
+        In today's digital age, having a strong online presence is essential for businesses of all sizes. Our team of experts is dedicated to crafting tailored strategies that resonate with your target audience, helping you achieve your business goals effectively. At DigiAppify, we provide a range of digital marketing services designed to elevate your brand's online presence and drive growth. Explore our core offerings below:
         </p>
 
         <div className="services-container">

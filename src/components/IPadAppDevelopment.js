@@ -27,7 +27,7 @@ const IPadAppDevelopment = () => {
 
         {/* Card Section for iPad Services */}
         <section className="services-card-section">
-          <h2 className="section-title">iPad Development Services</h2>
+          <h2 className="section-title">Our Services</h2>
           <div className="cards-container">
             <div className="card">
               <h3 className="card-title">Custom iPad App Development</h3>

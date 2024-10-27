@@ -21,7 +21,6 @@ body {
 .first-section {
   position: relative;
   width: 100%;
-  margin-bottom: 30px;
 }
 
 .first-image {
@@ -221,7 +220,7 @@ body {
   }
 
   .IPad_head {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   .just_descr {
@@ -251,7 +250,7 @@ body {
   }
 
   .section-title {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .card-title {
@@ -265,5 +264,57 @@ body {
   .cta-button {
     font-size: 1rem;
     padding: 10px 20px;
+  }
+}
+
+
+/* Updated Responsive Styles for Services Cards */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #e0f7fa;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  height: 12rem;
+}
+
+/* Hover effect on larger screens */
+@media (min-width: 481px) {
+  .card:hover {
+    transform: scale(1.05);
+  }
+}
+
+/* Responsive styling for small screens */
+@media (max-width: 768px) {
+  .cards-container {
+    grid-template-columns: 1fr; /* 1 column layout for tablets and below */
+  }
+}
+
+@media (max-width: 480px) {
+  .cards-container {
+    grid-template-columns: 1fr; 
+    display: inline-grid;
+  }
+
+  .card {
+    padding: 15px;
+    font-size: 1rem;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .card-desc {
+    font-size: 1rem;
   }
 }
